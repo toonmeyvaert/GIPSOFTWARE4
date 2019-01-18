@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,14 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AANKOOP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AANKOOP.Designer.cs">
+      <DependentUpon>AANKOOP.cs</DependentUpon>
     </Compile>
+    <Compile Include="AankoopK.cs" />
+    <Compile Include="Business.cs" />
+    <Compile Include="LeidingK.cs" />
+    <Compile Include="LidK.cs" />
+    <Compile Include="MateriaalK.cs" />
+    <Compile Include="MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU.Designer.cs">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KLUSJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KLUSJE.Designer.cs">
+      <DependentUpon>KLUSJE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LEIDING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEIDING.Designer.cs">
+      <DependentUpon>LEIDING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LID.Designer.cs">
+      <DependentUpon>LID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MATERIAAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MATERIAAL.Designer.cs">
+      <DependentUpon>MATERIAAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AANKOOP.resx">
+      <DependentUpon>AANKOOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEIDING.resx">
+      <DependentUpon>LEIDING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LID.resx">
+      <DependentUpon>LID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MATERIAAL.resx">
+      <DependentUpon>MATERIAAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU.resx">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
