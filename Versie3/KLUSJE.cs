@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Versie3
 {
-    public partial class Form1 : Form
+    public partial class KLUSJE : Form
     {
-        public Form1()
+        public KLUSJE()
         {
             InitializeComponent();
         }
