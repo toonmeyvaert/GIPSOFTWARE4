@@ -39,7 +39,7 @@ namespace Versie3
 
         private void btnAk_Click(object sender, EventArgs e)
         {
-            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtAdres.Text, txtEmail.Text, txtTak.Text, txtAchternaam.Text);
+            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtAdres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
             vulForm();
         }
 
@@ -64,7 +64,17 @@ namespace Versie3
             txtGeboorte.Show();
             txtMed.Show();
             txtNaam.Show();
-            txtTak.Show();  
+            cmbTak.Show();  
+        }
+
+        private void txtTak_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

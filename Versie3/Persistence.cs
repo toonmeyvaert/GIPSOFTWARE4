@@ -14,7 +14,7 @@ namespace Versie3
 
         public Persistence()
         {
-            _connectie = "server=localhost;user id=root; Password= 'Test123' ;database=database";
+            _connectie = "server=ID191774_6itngip17.db.webhosting.be;user id=ID191774_6itngip17;database=ID191774_6itngip17;password=WQVU3Cti";
             conn = new MySqlConnection(_connectie);
         }
 
@@ -23,7 +23,7 @@ namespace Versie3
             List<LidK> lijst = new List<LidK>();
 
 
-            MySqlCommand cmd = new MySqlCommand("select * from database.lid", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from lid", conn);
 
             conn.Open();
             MySqlDataReader dataReader = cmd.ExecuteReader();
@@ -41,7 +41,7 @@ namespace Versie3
         {
            
 
-            MySqlCommand cmd = new MySqlCommand("insert into database.lid (NaamLid,GeboorteJaar,MedischeFiche,adres,EmailOuder,Tak,Achternaam) values ('" + item.naam + "','" + item.geboorte + "','" + item.medisch + "','" + item.adres +"','"+item.email + "','" + item.tak + "','" + item.achternaam +  "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into lid (NaamLid,GeboorteJaar,MedischeFiche,adres,EmailOuder,Tak,Achternaam) values ('" + item.naam + "','" + item.geboorte + "','" + item.medisch + "','" + item.adres +"','"+item.email + "','" + item.tak + "','" + item.achternaam +  "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -53,7 +53,7 @@ namespace Versie3
             List<AankoopK> lijst = new List<AankoopK>();
 
 
-            MySqlCommand cmd = new MySqlCommand("select * from database.aankoop", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from aankoop", conn);
 
             conn.Open();
             MySqlDataReader datareader = cmd.ExecuteReader();
@@ -69,7 +69,7 @@ namespace Versie3
 
         public void addAankoop(AankoopK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into database.aankoop (Prijs,Aantal,Voorwerp) values (" + item.prijs + "," + item.aantal + ",'" + item.voorwerp + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into aankoop (Prijs,Aantal,Voorwerp) values (" + item.prijs + "," + item.aantal + ",'" + item.voorwerp + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -81,7 +81,7 @@ namespace Versie3
             List<LeidingK> lijst = new List<LeidingK>();
 
 
-            MySqlCommand cmd = new MySqlCommand("select * from database.leiding", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from leiding", conn);
 
             conn.Open();
             MySqlDataReader dataReader = cmd.ExecuteReader();
@@ -97,7 +97,7 @@ namespace Versie3
 
         public void addLeiding(LeidingK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into database.lid (Naam,Tak,StartLeiding,Hoofdleiding,Achternaam) values ('" + item.naam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into lid (Naam,Tak,StartLeiding,Hoofdleiding,Achternaam) values ('" + item.naam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -109,7 +109,7 @@ namespace Versie3
             List<MateriaalK> lijst = new List<MateriaalK>();
 
 
-            MySqlCommand cmd = new MySqlCommand("select * from database.materiaal", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from materiaal", conn);
 
             conn.Open();
             MySqlDataReader datareader = cmd.ExecuteReader();
@@ -125,7 +125,7 @@ namespace Versie3
 
         public void addMateriaal(MateriaalK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into database.materiaal (Naam,Aantal,Beschikbaarheid) values ('" + item.naam + "'," + item.aantal + ",'" + item.beschikbaarheid + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into materiaal (Naam,Aantal,Beschikbaarheid) values ('" + item.naam + "'," + item.aantal + ",'" + item.beschikbaarheid + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
