@@ -72,7 +72,7 @@ namespace Versie3
 
         public override string ToString()
         {
-            return strNaam + strAchternaam + strGeboorte + strMedische + strAdres + strEmailOuder + strTak;
+            return strNaam + " " + strAchternaam + " " + strGeboorte + " " + strMedische + " " + strAdres + " " + strEmailOuder + " " + strTak;
         }
 
     }

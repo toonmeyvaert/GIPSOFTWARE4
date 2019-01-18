@@ -30,7 +30,7 @@ namespace Versie3
 
             lstLeiding.Items.Clear();
 
-            foreach (string lijn in bus.getLeden())
+            foreach (string lijn in bus.getLeiding())
             {
                 lstLeiding.Items.Add(lijn);
             }

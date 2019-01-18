@@ -16,7 +16,7 @@ namespace Versie3
         {
             _connectie = "server=localhost;user id=root; Password= 'Test123' ;database=database";
             conn = new MySqlConnection(_connectie);
-        }   
+        }
 
         public List<LidK> getLedenFromDB()
         {

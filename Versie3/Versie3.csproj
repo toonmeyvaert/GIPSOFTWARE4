@@ -93,6 +93,9 @@
     <EmbeddedResource Include="AANKOOP.resx">
       <DependentUpon>AANKOOP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KLUSJE.resx">
+      <DependentUpon>KLUSJE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LEIDING.resx">
       <DependentUpon>LEIDING.cs</DependentUpon>
     </EmbeddedResource>
