@@ -8,31 +8,31 @@ namespace Versie3
 {
     class KlusjeK
     {
-        private int intSoort;
-        private int intVerdeeling;
-        private int intPlanning;
+        private string strSoort;
+        private string strVerdeeling;
+        private string strPlanning;
 
-        public int soort
+        public string soort
         {
-            get { return intSoort; }
-            set { value = intSoort; }
+            get { return strSoort; }
+            set { value = strSoort; }
         }
-        public int verdeeling
+        public string verdeeling
         {
-            get { return intVerdeeling; }
-            set { value = intVerdeeling; }
+            get { return strVerdeeling; }
+            set { value = strVerdeeling; }
         }
-        public int planning
+        public string planning
         {
-            get { return intPlanning; }
-            set { value = intPlanning; }
+            get { return strPlanning; }
+            set { value = strPlanning; }
         }
 
-        public KlusjeK(int pintSoort, int pintVerdeeling, int pintPlanning)
+        public KlusjeK(string pstrSoort, string pstrVerdeeling, string pstrPlanning)
         {
-            intSoort = pintSoort;
-            intVerdeeling = pintVerdeeling;
-            intPlanning = pintPlanning;
+            strSoort = pstrSoort;
+            strVerdeeling = pstrVerdeeling;
+            strPlanning = pstrPlanning;
         }
     }
 }
