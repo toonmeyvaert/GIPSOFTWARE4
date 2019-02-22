@@ -48,54 +48,56 @@
             this.MenuKlusje});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(488, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(366, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // MenuLid
             // 
             this.MenuLid.Name = "MenuLid";
-            this.MenuLid.Size = new System.Drawing.Size(41, 24);
+            this.MenuLid.Size = new System.Drawing.Size(35, 20);
             this.MenuLid.Text = "Lid";
             this.MenuLid.Click += new System.EventHandler(this.lidToolStripMenuItem_Click);
             // 
             // MenuLeiding
             // 
             this.MenuLeiding.Name = "MenuLeiding";
-            this.MenuLeiding.Size = new System.Drawing.Size(70, 24);
+            this.MenuLeiding.Size = new System.Drawing.Size(58, 20);
             this.MenuLeiding.Text = "Leiding";
             this.MenuLeiding.Click += new System.EventHandler(this.MenuLeiding_Click);
             // 
             // MenuAankoop
             // 
             this.MenuAankoop.Name = "MenuAankoop";
-            this.MenuAankoop.Size = new System.Drawing.Size(81, 24);
+            this.MenuAankoop.Size = new System.Drawing.Size(67, 20);
             this.MenuAankoop.Text = "Aankoop";
             this.MenuAankoop.Click += new System.EventHandler(this.MenuAankoop_Click);
             // 
             // MenuMateriaal
             // 
             this.MenuMateriaal.Name = "MenuMateriaal";
-            this.MenuMateriaal.Size = new System.Drawing.Size(84, 24);
+            this.MenuMateriaal.Size = new System.Drawing.Size(68, 20);
             this.MenuMateriaal.Text = "Materiaal";
             this.MenuMateriaal.Click += new System.EventHandler(this.MenuMateriaal_Click);
             // 
             // MenuKlusje
             // 
             this.MenuKlusje.Name = "MenuKlusje";
-            this.MenuKlusje.Size = new System.Drawing.Size(60, 24);
+            this.MenuKlusje.Size = new System.Drawing.Size(50, 20);
             this.MenuKlusje.Text = "Klusje";
             this.MenuKlusje.Click += new System.EventHandler(this.MenuKlusje_Click);
             // 
             // MENU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 438);
+            this.ClientSize = new System.Drawing.Size(366, 356);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MENU";
-            this.Text = "Form1";
+            this.Text = "Zolak";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

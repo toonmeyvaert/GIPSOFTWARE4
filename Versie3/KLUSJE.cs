@@ -16,5 +16,10 @@ namespace Versie3
         {
             InitializeComponent();
         }
+
+        private void KLUSJE_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

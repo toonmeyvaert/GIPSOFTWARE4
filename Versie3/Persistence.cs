@@ -130,12 +130,33 @@ namespace Versie3
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-        }   
+        }
 
+        public List<KlusjeK> GetKlusjesFromDB()
+        {
+            List<KlusjeK> lijst = new List<KlusjeK>();
 
+            MySqlCommand cmd = new MySqlCommand("select * from klusje", conn);
 
+            conn.Open();
+            MySqlDataReader datareader = cmd.ExecuteReader();
 
+            while (datareader.Read())
+            {
+                KlusjeK k = new KlusjeK(Convert.ToInt32(datareader["SoortenKlusje"]),Convert.ToInt32(datareader["Taakverdeling"]), Convert.ToInt32(datareader["Planning"]));
+            }
+            conn.Close();
+            return lijst;
+        }
 
+        public void addKlusje(KlusjeK item)
+        {
+            MySqlCommand cmd = new MySqlCommand("insert into klusje (SoortenKlusje,Taakverdeling,Planning) values ('" + item.soort + "'," + item.verdeeling + ",'" + item.planning + "')", conn);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
 
 
 
