@@ -19,11 +19,12 @@ namespace Versie3
 
         public Business()
         {
-            pers = new Persistence();
+            
             LidKs = pers.getLedenFromDB();
             aankopen = pers.GetAankopenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
+            pers = new Persistence();
         }
 
         public List<string> getLeden()
