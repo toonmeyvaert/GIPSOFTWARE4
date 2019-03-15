@@ -19,9 +19,9 @@ namespace Versie3
 
         public Business()
         {
-            
-            LidKs = pers.getLedenFromDB();
             aankopen = pers.GetAankopenFromDB();
+            LidKs = pers.getLedenFromDB();
+            
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
             pers = new Persistence();
