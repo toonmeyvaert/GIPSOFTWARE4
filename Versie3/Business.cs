@@ -119,6 +119,15 @@ namespace Versie3
             pers.addMateriaal(m);
         }
 
+        public List<string> getKlusjes()
+        {
+            List<string> result = new List<string>();
+
+            foreach (KlusjeK item in getKlusjes)
+            {
+                result.Add(item.ToString());
+            }
+        }
 
 
 

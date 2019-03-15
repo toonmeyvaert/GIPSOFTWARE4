@@ -50,20 +50,25 @@ namespace Versie3
             label3.Show();
             label6.Show();
             label7.Show();
-            txtAchternaam.Show();
-            txtAdres.Show();
-            txtGeboorte.Show();
+            txtStart.Show();
+            txtHoofdLeiding.Show();
+            txtStart.Show();
             txtNaam.Show();
             txtTak.Show();
         }
 
         private void btnAk_Click(object sender, EventArgs e)
         {
-            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtAdres.Text, txtTak.Text, txtAchternaam.Text);
+            bus.voegToe(txtNaam.Text, txtAchternaam.Text, txtTak.Text, txtStart.Text, txtHoofdLeiding.Text);
             vulForm();
         }
 
         private void lstLeiding_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGeboorte_TextChanged(object sender, EventArgs e)
         {
 
         }
