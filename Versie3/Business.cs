@@ -9,7 +9,6 @@ namespace Versie3
     class Business
     {
         private Persistence pers;
-
         private List<LidK> _LidK;
         public List<LidK> LidKs
         {
@@ -21,10 +20,10 @@ namespace Versie3
         {
             aankopen = pers.GetAankopenFromDB();
             LidKs = pers.getLedenFromDB();
-            
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
             pers = new Persistence();
+            klusjes = pers.GetKlusjesFromDB();
         }
 
         public List<string> getLeden()
@@ -120,11 +119,21 @@ namespace Versie3
             pers.addMateriaal(m);
         }
 
+        private List<KlusjeK> _klusjes;
+        public List<KlusjeK> klusjes
+        {
+            get { return _klusjes; }
+            set { _klusjes = value; }
+        }
+
+
+
+
         public List<string> getKlusjes()
         {
             List<string> result = new List<string>();
 
-            foreach (KlusjeK item in getKlusjes)
+            foreach (KlusjeK item in klusjes)
             {
                 result.Add(item.ToString());
             }
