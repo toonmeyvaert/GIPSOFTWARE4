@@ -19,12 +19,11 @@ namespace Versie3
 
         public Business()
         {
-            aankopen = pers.GetAankopenFromDB();
+            pers = new Persistence();
             LidKs = pers.getLedenFromDB();
-            
+            aankopen = pers.GetAankopenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
-            pers = new Persistence();
         }
 
         public List<string> getLeden()
@@ -128,6 +127,7 @@ namespace Versie3
             {
                 result.Add(item.ToString());
             }
+            return result;
         }
 
 
