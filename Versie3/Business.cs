@@ -19,11 +19,12 @@ namespace Versie3
 
         public Business()
         {
-            pers = new Persistence();
-            LidKs = pers.getLedenFromDB();
             aankopen = pers.GetAankopenFromDB();
+            LidKs = pers.getLedenFromDB();
+            
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
+            pers = new Persistence();
         }
 
         public List<string> getLeden()
@@ -119,6 +120,15 @@ namespace Versie3
             pers.addMateriaal(m);
         }
 
+        public List<string> getKlusjes()
+        {
+            List<string> result = new List<string>();
+
+            foreach (KlusjeK item in getKlusjes)
+            {
+                result.Add(item.ToString());
+            }
+        }
 
 
 
