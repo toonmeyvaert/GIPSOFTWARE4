@@ -24,7 +24,9 @@ namespace Versie3
             aankopen = pers.GetAankopenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
-        }
+            klusjes = pers.GetKlusjesFromDB();
+        
+       }
 
         public List<string> getLeden()
         {
@@ -119,11 +121,18 @@ namespace Versie3
             pers.addMateriaal(m);
         }
 
+        private List<KlusjeK> _klusjes;
+        public List<KlusjeK> klusjes
+        {
+            get { return _klusjes; }
+            set { _klusjes = value; }
+        }
+
         public List<string> getKlusjes()
         {
             List<string> result = new List<string>();
 
-            foreach (KlusjeK item in getKlusjes)
+            foreach (KlusjeK item in klusjes)
             {
                 result.Add(item.ToString());
             }

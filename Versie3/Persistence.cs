@@ -97,7 +97,7 @@ namespace Versie3
 
         public void addLeiding(LeidingK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into lid (Naam,Tak,StartLeiding,Hoofdleiding,Achternaam) values ('" + item.naam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into leiding (Naam,Tak,StartLeiding,Hoofdleiding,Achternaam) values ('" + item.naam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -143,7 +143,7 @@ namespace Versie3
 
             while (datareader.Read())
             {
-                KlusjeK k = new KlusjeK(Convert.ToInt32(datareader["SoortenKlusje"]),Convert.ToInt32(datareader["Taakverdeling"]), Convert.ToInt32(datareader["Planning"]));
+                KlusjeK k = new KlusjeK(datareader["SoortenKlusje"].ToString(),datareader["Taakverdeling"].ToString(), datareader["Planning"].ToString());
             }
             conn.Close();
             return lijst;
@@ -156,11 +156,7 @@ namespace Versie3
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
+            //gilles heeft vandaag gebarft in de les 
         }
-
-
-
-
-
     }
 }
