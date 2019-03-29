@@ -88,7 +88,7 @@ namespace Versie3
 
             while (dataReader.Read())
             {
-                LeidingK l = new LeidingK(dataReader["Naam"].ToString(), (dataReader["Achternaam"].ToString()), (dataReader["Tak"].ToString()), (dataReader["Startleiding"].ToString()), (dataReader["Hoofdleiding"].ToString()));
+                LeidingK l = new LeidingK(dataReader["Naam"].ToString(), (dataReader["Achternaam"].ToString()), (dataReader["Groep"].ToString()), (dataReader["Startleiding"].ToString()), (dataReader["Hoofdleiding"].ToString()));
                 lijst.Add(l);
             }
             conn.Close();
@@ -97,7 +97,7 @@ namespace Versie3
 
         public void addLeiding(LeidingK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into leiding (Naam,Tak,StartLeiding,Hoofdleiding,Achternaam) values ('" + item.naam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into leiding (Naam,Achternaam,Groep,Startleiding,Hoofdleiding) values ('" + item.naam + "','" + item.achternaam + "','" + item.tak + "','" + item.start + "','" + item.hoofd + "','" + item.achternaam + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -157,5 +157,10 @@ namespace Versie3
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+
+
+
+
     }
 }
