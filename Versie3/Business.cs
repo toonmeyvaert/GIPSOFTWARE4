@@ -21,12 +21,11 @@ namespace Versie3
         {
             pers = new Persistence();
             LidKs = pers.getLedenFromDB();
-            aankopen = pers.GetAankopenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
+            pers = new Persistence();
             klusjes = pers.GetKlusjesFromDB();
-        
-       }
+        }
 
         public List<string> getLeden()
         {
@@ -128,11 +127,14 @@ namespace Versie3
             set { _klusjes = value; }
         }
 
+
+
+
         public List<string> getKlusjes()
         {
             List<string> result = new List<string>();
 
-            foreach (KlusjeK item in klusjes)
+            foreach (KlusjeK item in getKlusjes)
             {
                 result.Add(item.ToString());
             }
