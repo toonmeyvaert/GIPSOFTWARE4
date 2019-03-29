@@ -50,7 +50,6 @@ namespace Versie3
         {
             bus.voegToe(Convert.ToDouble(txtPrijs.Text), Convert.ToInt32(txtAantal.Text), txtVoorwerp.Text);
             vulForm();
-
         }
     }
 }
