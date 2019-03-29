@@ -8,7 +8,7 @@ namespace Versie3
 {
     class Business
     {
-        private Persistence pers;
+        private Persistence pers ;
         private List<LidK> _LidK;
         public List<LidK> LidKs
         {
@@ -18,11 +18,12 @@ namespace Versie3
 
         public Business()
         {
+            pers = new Persistence();
             aankopen = pers.GetAankopenFromDB();
             LidKs = pers.getLedenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
-            pers = new Persistence();
+           
             klusjes = pers.GetKlusjesFromDB();
         }
 

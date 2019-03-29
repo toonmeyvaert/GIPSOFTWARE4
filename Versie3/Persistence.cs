@@ -21,13 +21,9 @@ namespace Versie3
         public List<LidK> getLedenFromDB()
         {
             List<LidK> lijst = new List<LidK>();
-
-
             MySqlCommand cmd = new MySqlCommand("select * from lid", conn);
-
             conn.Open();
             MySqlDataReader dataReader = cmd.ExecuteReader();
-
             while (dataReader.Read())
             {
                 LidK l = new LidK(dataReader["NaamLid"].ToString(), (dataReader["Geboortejaar"].ToString()), (dataReader["MedischeFiche"].ToString()), (dataReader["adres"].ToString()),(dataReader["EmailOuder"].ToString()),(dataReader["Tak"].ToString()), dataReader["Achternaam"].ToString());
@@ -51,13 +47,9 @@ namespace Versie3
         public List<AankoopK> GetAankopenFromDB()
         {
             List<AankoopK> lijst = new List<AankoopK>();
-
-
             MySqlCommand cmd = new MySqlCommand("select * from aankoop", conn);
-
             conn.Open();
             MySqlDataReader datareader = cmd.ExecuteReader();
-
             while (datareader.Read())
             {
                 AankoopK a = new AankoopK(Convert.ToDouble(datareader["Prijs"]), Convert.ToInt32(datareader["Aantal"]), datareader["Voorwerp"].ToString());

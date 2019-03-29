@@ -55,6 +55,7 @@ namespace Versie3
             txtStart.Show();
             txtNaam.Show();
             txtTak.Show();
+            txtAchternaam.Show();
         }
 
         private void btnAk_Click(object sender, EventArgs e)
