@@ -156,7 +156,6 @@ namespace Versie3
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-            //gilles heeft vandaag gebarft in de les 
         }
     }
 }

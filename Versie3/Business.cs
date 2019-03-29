@@ -23,7 +23,6 @@ namespace Versie3
             LidKs = pers.getLedenFromDB();
             Leidingks = pers.getLeidingFromDB();
             materialen = pers.GetMaterialenFromDB();
-            pers = new Persistence();
             klusjes = pers.GetKlusjesFromDB();
         }
 
@@ -127,14 +126,11 @@ namespace Versie3
             set { _klusjes = value; }
         }
 
-
-
-
         public List<string> getKlusjes()
         {
             List<string> result = new List<string>();
 
-            foreach (KlusjeK item in getKlusjes)
+            foreach (KlusjeK item in klusjes)
             {
                 result.Add(item.ToString());
             }
