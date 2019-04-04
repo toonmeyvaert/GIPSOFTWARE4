@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Versie3
 {
-    public partial class KLUSJE : Form
+    public partial class HOOFD_KLUSJE : Form
     {
-        public KLUSJE()
+        public HOOFD_KLUSJE()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)

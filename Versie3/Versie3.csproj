@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="AankoopK.cs" />
     <Compile Include="Business.cs" />
+    <Compile Include="HOOFD_KLUSJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOOFD_KLUSJE.Designer.cs">
+      <DependentUpon>HOOFD_KLUSJE.cs</DependentUpon>
+    </Compile>
     <Compile Include="KLUSJE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AANKOOP.resx">
       <DependentUpon>AANKOOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOOFD_KLUSJE.resx">
+      <DependentUpon>HOOFD_KLUSJE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KLUSJE.resx">
       <DependentUpon>KLUSJE.cs</DependentUpon>

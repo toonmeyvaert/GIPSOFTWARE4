@@ -117,14 +117,14 @@ namespace Versie3
             MySqlDataReader datareader = cmd.ExecuteReader();
             while (datareader.Read())
             {
-                KlusjeK k = new KlusjeK(datareader["SoortenKlusje"].ToString(),datareader["Taakverdeling"].ToString(), datareader["Planning"].ToString());
+                KlusjeK k = new KlusjeK(datareader["SoortenKlusje"].ToString(),datareader["Verantwoordelijke"].ToString(), datareader["Planning"].ToString());
             }
             conn.Close();
             return lijst;
         }
         public void addKlusje(KlusjeK item)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into klusje (SoortenKlusje,Taakverdeling,Planning) values ('" + item.soort + "'," + item.verdeeling + ",'" + item.planning + "')", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into klusje (SoortenKlusje,Verantwoordelijke,Planning) values ('" + item.soort + "'," + item.verantwoordelijke + ",'" + item.planning + "')", conn);
 
             conn.Open();
             cmd.ExecuteNonQuery();

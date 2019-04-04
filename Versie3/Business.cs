@@ -126,9 +126,9 @@ namespace Versie3
             }
             return result;
         }
-        public void voegToe(string pSoort, string pTaak, string pPlanning)
+        public void voegToe(string pSoort, string pverantwoordelijke, string pPlanning)
         {
-            KlusjeK k = new KlusjeK(pSoort, pTaak, pPlanning);
+            KlusjeK k = new KlusjeK(pSoort, pverantwoordelijke, pPlanning);
             pers.addKlusje(k);
         }
 

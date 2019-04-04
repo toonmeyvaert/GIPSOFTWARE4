@@ -9,7 +9,7 @@ namespace Versie3
     class KlusjeK
     {
         private string strSoort;
-        private string strVerdeeling;
+        private string strVerantwoordelijke;
         private string strPlanning;
 
         public string soort
@@ -17,10 +17,10 @@ namespace Versie3
             get { return strSoort; }
             set { value = strSoort; }
         }
-        public string verdeeling
+        public string verantwoordelijke
         {
-            get { return strVerdeeling; }
-            set { value = strVerdeeling; }
+            get { return strVerantwoordelijke; }
+            set { value = strVerantwoordelijke; }
         }
         public string planning
         {
@@ -28,10 +28,10 @@ namespace Versie3
             set { value = strPlanning; }
         }
 
-        public KlusjeK(string pstrSoort, string pstrVerdeeling, string pstrPlanning)
+        public KlusjeK(string pstrSoort, string pstrVerantwoordelijke, string pstrPlanning)
         {
             strSoort = pstrSoort;
-            strVerdeeling = pstrVerdeeling;
+            strVerantwoordelijke = pstrVerantwoordelijke;
             strPlanning = pstrPlanning;
         }
     }
