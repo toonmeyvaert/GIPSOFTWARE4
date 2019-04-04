@@ -34,10 +34,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 537);
+            this.ClientSize = new System.Drawing.Size(519, 457);
             this.Name = "KLUSJE";
             this.Text = "KLUSJE";
-            this.Load += new System.EventHandler(this.KLUSJE_Load);
             this.ResumeLayout(false);
 
         }

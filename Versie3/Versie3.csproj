@@ -32,9 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\Dll\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +59,12 @@
     </Compile>
     <Compile Include="AankoopK.cs" />
     <Compile Include="Business.cs" />
+    <Compile Include="KLUSJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KLUSJE.Designer.cs">
+      <DependentUpon>KLUSJE.cs</DependentUpon>
+    </Compile>
     <Compile Include="KlusjeK.cs" />
     <Compile Include="LeidingK.cs" />
     <Compile Include="LidK.cs" />
@@ -63,12 +74,6 @@
     </Compile>
     <Compile Include="MENU.Designer.cs">
       <DependentUpon>MENU.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KLUSJE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KLUSJE.Designer.cs">
-      <DependentUpon>KLUSJE.cs</DependentUpon>
     </Compile>
     <Compile Include="LEIDING.cs">
       <SubType>Form</SubType>
