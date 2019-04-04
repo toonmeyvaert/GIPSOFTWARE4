@@ -39,7 +39,5 @@ namespace Versie3
         {
             return strVoorwerp + " " + intAantal + " " + dblPrijs;
         }
-        //dickpick ffffpohyuphkjh
-
     }
 }

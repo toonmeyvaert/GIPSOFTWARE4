@@ -46,7 +46,7 @@
             // btnAk
             // 
             this.btnAk.Location = new System.Drawing.Point(409, 370);
-            this.btnAk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAk.Margin = new System.Windows.Forms.Padding(2);
             this.btnAk.Name = "btnAk";
             this.btnAk.Size = new System.Drawing.Size(106, 34);
             this.btnAk.TabIndex = 81;
@@ -58,7 +58,7 @@
             // txtTak
             // 
             this.txtTak.Location = new System.Drawing.Point(409, 336);
-            this.txtTak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTak.Margin = new System.Windows.Forms.Padding(2);
             this.txtTak.Name = "txtTak";
             this.txtTak.Size = new System.Drawing.Size(108, 20);
             this.txtTak.TabIndex = 80;
@@ -78,7 +78,7 @@
             // txtHoofdLeiding
             // 
             this.txtHoofdLeiding.Location = new System.Drawing.Point(248, 379);
-            this.txtHoofdLeiding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoofdLeiding.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoofdLeiding.Name = "txtHoofdLeiding";
             this.txtHoofdLeiding.Size = new System.Drawing.Size(108, 20);
             this.txtHoofdLeiding.TabIndex = 77;
@@ -99,7 +99,7 @@
             // txtStart
             // 
             this.txtStart.Location = new System.Drawing.Point(409, 290);
-            this.txtStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStart.Margin = new System.Windows.Forms.Padding(2);
             this.txtStart.Name = "txtStart";
             this.txtStart.Size = new System.Drawing.Size(102, 20);
             this.txtStart.TabIndex = 72;
@@ -120,7 +120,7 @@
             // txtAchternaam
             // 
             this.txtAchternaam.Location = new System.Drawing.Point(248, 336);
-            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(2);
             this.txtAchternaam.Name = "txtAchternaam";
             this.txtAchternaam.Size = new System.Drawing.Size(108, 20);
             this.txtAchternaam.TabIndex = 70;
@@ -129,7 +129,7 @@
             // txtNaam
             // 
             this.txtNaam.Location = new System.Drawing.Point(248, 288);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaam.Name = "txtNaam";
             this.txtNaam.Size = new System.Drawing.Size(108, 20);
             this.txtNaam.TabIndex = 69;
@@ -160,7 +160,7 @@
             // btnLeiding
             // 
             this.btnLeiding.Location = new System.Drawing.Point(80, 290);
-            this.btnLeiding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLeiding.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeiding.Name = "btnLeiding";
             this.btnLeiding.Size = new System.Drawing.Size(118, 47);
             this.btnLeiding.TabIndex = 66;
@@ -172,7 +172,7 @@
             // 
             this.lstLeiding.FormattingEnabled = true;
             this.lstLeiding.Location = new System.Drawing.Point(80, 34);
-            this.lstLeiding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstLeiding.Margin = new System.Windows.Forms.Padding(2);
             this.lstLeiding.Name = "lstLeiding";
             this.lstLeiding.Size = new System.Drawing.Size(549, 238);
             this.lstLeiding.TabIndex = 65;
@@ -196,7 +196,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLeiding);
             this.Controls.Add(this.lstLeiding);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LEIDING";
             this.Text = "LEIDING";
             this.Load += new System.EventHandler(this.LEIDING_Load);
