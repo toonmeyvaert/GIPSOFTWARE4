@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KLUSJE));
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstKlusje = new System.Windows.Forms.ListBox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
             // 
@@ -43,13 +43,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Beschikbare Klusjes:";
             // 
-            // listBox1
+            // lstKlusje
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(120, 65);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(412, 160);
-            this.listBox1.TabIndex = 1;
+            this.lstKlusje.FormattingEnabled = true;
+            this.lstKlusje.Location = new System.Drawing.Point(120, 65);
+            this.lstKlusje.Name = "lstKlusje";
+            this.lstKlusje.Size = new System.Drawing.Size(412, 160);
+            this.lstKlusje.TabIndex = 1;
+            this.lstKlusje.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // bunifuThinButton21
             // 
@@ -75,7 +76,6 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Visible = false;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // KLUSJE
@@ -84,10 +84,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 334);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstKlusje);
             this.Controls.Add(this.label1);
             this.Name = "KLUSJE";
             this.Text = "KLUSJE";
+            this.Load += new System.EventHandler(this.KLUSJE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstKlusje;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }

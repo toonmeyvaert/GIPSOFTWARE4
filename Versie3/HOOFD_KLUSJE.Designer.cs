@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HOOFD_KLUSJE));
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstK = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.lstKlusje = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lstVerantwoordelijke = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lstPlanning = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtKlusje = new System.Windows.Forms.TextBox();
+            this.txtVerantwoordelijke = new System.Windows.Forms.TextBox();
+            this.txtPlanning = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstK
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(104, 25);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(412, 56);
-            this.listBox1.TabIndex = 3;
+            this.lstK.FormattingEnabled = true;
+            this.lstK.Location = new System.Drawing.Point(104, 25);
+            this.lstK.Name = "lstK";
+            this.lstK.Size = new System.Drawing.Size(412, 56);
+            this.lstK.TabIndex = 3;
             // 
             // label1
             // 
@@ -109,23 +109,6 @@
             this.bunifuThinButton22.TabIndex = 6;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lstKlusje
-            // 
-            this.lstKlusje.BorderColorFocused = System.Drawing.Color.Blue;
-            this.lstKlusje.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstKlusje.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.lstKlusje.BorderThickness = 3;
-            this.lstKlusje.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lstKlusje.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lstKlusje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstKlusje.isPassword = false;
-            this.lstKlusje.Location = new System.Drawing.Point(262, 240);
-            this.lstKlusje.Margin = new System.Windows.Forms.Padding(4);
-            this.lstKlusje.Name = "lstKlusje";
-            this.lstKlusje.Size = new System.Drawing.Size(139, 25);
-            this.lstKlusje.TabIndex = 10;
-            this.lstKlusje.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
@@ -146,23 +129,6 @@
             this.bunifuCustomLabel2.TabIndex = 12;
             this.bunifuCustomLabel2.Text = "Verantwoordelijke:";
             // 
-            // lstVerantwoordelijke
-            // 
-            this.lstVerantwoordelijke.BorderColorFocused = System.Drawing.Color.Blue;
-            this.lstVerantwoordelijke.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstVerantwoordelijke.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.lstVerantwoordelijke.BorderThickness = 3;
-            this.lstVerantwoordelijke.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lstVerantwoordelijke.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lstVerantwoordelijke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstVerantwoordelijke.isPassword = false;
-            this.lstVerantwoordelijke.Location = new System.Drawing.Point(262, 273);
-            this.lstVerantwoordelijke.Margin = new System.Windows.Forms.Padding(4);
-            this.lstVerantwoordelijke.Name = "lstVerantwoordelijke";
-            this.lstVerantwoordelijke.Size = new System.Drawing.Size(139, 25);
-            this.lstVerantwoordelijke.TabIndex = 13;
-            this.lstVerantwoordelijke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
@@ -173,40 +139,45 @@
             this.bunifuCustomLabel3.TabIndex = 14;
             this.bunifuCustomLabel3.Text = "Planning:";
             // 
-            // lstPlanning
+            // txtKlusje
             // 
-            this.lstPlanning.BorderColorFocused = System.Drawing.Color.Blue;
-            this.lstPlanning.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstPlanning.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.lstPlanning.BorderThickness = 3;
-            this.lstPlanning.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lstPlanning.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lstPlanning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstPlanning.isPassword = false;
-            this.lstPlanning.Location = new System.Drawing.Point(262, 306);
-            this.lstPlanning.Margin = new System.Windows.Forms.Padding(4);
-            this.lstPlanning.Name = "lstPlanning";
-            this.lstPlanning.Size = new System.Drawing.Size(139, 25);
-            this.lstPlanning.TabIndex = 15;
-            this.lstPlanning.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtKlusje.Location = new System.Drawing.Point(262, 245);
+            this.txtKlusje.Name = "txtKlusje";
+            this.txtKlusje.Size = new System.Drawing.Size(139, 20);
+            this.txtKlusje.TabIndex = 16;
+            // 
+            // txtVerantwoordelijke
+            // 
+            this.txtVerantwoordelijke.Location = new System.Drawing.Point(262, 278);
+            this.txtVerantwoordelijke.Name = "txtVerantwoordelijke";
+            this.txtVerantwoordelijke.Size = new System.Drawing.Size(139, 20);
+            this.txtVerantwoordelijke.TabIndex = 17;
+            // 
+            // txtPlanning
+            // 
+            this.txtPlanning.Location = new System.Drawing.Point(262, 315);
+            this.txtPlanning.Name = "txtPlanning";
+            this.txtPlanning.Size = new System.Drawing.Size(139, 20);
+            this.txtPlanning.TabIndex = 18;
             // 
             // HOOFD_KLUSJE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 442);
-            this.Controls.Add(this.lstPlanning);
+            this.Controls.Add(this.txtPlanning);
+            this.Controls.Add(this.txtVerantwoordelijke);
+            this.Controls.Add(this.txtKlusje);
             this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.lstVerantwoordelijke);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.lstKlusje);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstK);
             this.Name = "HOOFD_KLUSJE";
             this.Text = "HOOFD_KLUSJE";
+            this.Load += new System.EventHandler(this.HOOFD_KLUSJE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,15 +185,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstK;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lstKlusje;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lstVerantwoordelijke;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lstPlanning;
+        private System.Windows.Forms.TextBox txtKlusje;
+        private System.Windows.Forms.TextBox txtVerantwoordelijke;
+        private System.Windows.Forms.TextBox txtPlanning;
     }
 }

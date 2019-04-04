@@ -34,7 +34,6 @@ namespace Versie3
             {
                 lstLeiding.Items.Add(lijn);
             }
-
         }
 
         private void label6_Click(object sender, EventArgs e)
