@@ -59,5 +59,10 @@ namespace Versie3
         {
 
         }
+
+        private void txtPlanning_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

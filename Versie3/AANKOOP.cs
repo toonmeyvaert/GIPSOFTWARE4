@@ -48,8 +48,13 @@ namespace Versie3
 
         private void btnVoegToe_Click_1(object sender, EventArgs e)
         {
-            bus.voegToe(Convert.ToDouble(txtPrijs.Text), Convert.ToInt32(txtAantal.Text), txtVoorwerp.Text);
+            bus.voegToe(Convert.ToDouble(txtPrijs.Text), Convert.ToInt32(txtAantal.Text), Convert.ToString(txtVoorwerp.Text));
             vulForm();
+        }
+
+        private void txtVoorwerpa_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

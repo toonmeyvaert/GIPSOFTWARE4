@@ -28,96 +28,149 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVoegToe = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AANKOOP));
             this.lstAankoop = new System.Windows.Forms.ListBox();
-            this.txtPrijs = new System.Windows.Forms.TextBox();
-            this.txtAantal = new System.Windows.Forms.TextBox();
-            this.txtVoorwerp = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtVoorwerp = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtAantal = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPrijs = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnVoegToe = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
-            // 
-            // btnVoegToe
-            // 
-            this.btnVoegToe.Location = new System.Drawing.Point(292, 15);
-            this.btnVoegToe.Name = "btnVoegToe";
-            this.btnVoegToe.Size = new System.Drawing.Size(218, 82);
-            this.btnVoegToe.TabIndex = 15;
-            this.btnVoegToe.Text = "VOEG TOE ";
-            this.btnVoegToe.UseVisualStyleBackColor = true;
-            this.btnVoegToe.Click += new System.EventHandler(this.btnVoegToe_Click_1);
             // 
             // lstAankoop
             // 
             this.lstAankoop.FormattingEnabled = true;
-            this.lstAankoop.ItemHeight = 16;
-            this.lstAankoop.Location = new System.Drawing.Point(58, 121);
+            this.lstAankoop.Location = new System.Drawing.Point(44, 98);
+            this.lstAankoop.Margin = new System.Windows.Forms.Padding(2);
             this.lstAankoop.Name = "lstAankoop";
-            this.lstAankoop.Size = new System.Drawing.Size(305, 164);
+            this.lstAankoop.Size = new System.Drawing.Size(230, 134);
             this.lstAankoop.TabIndex = 14;
-            // 
-            // txtPrijs
-            // 
-            this.txtPrijs.Location = new System.Drawing.Point(136, 73);
-            this.txtPrijs.Name = "txtPrijs";
-            this.txtPrijs.Size = new System.Drawing.Size(137, 22);
-            this.txtPrijs.TabIndex = 13;
-            // 
-            // txtAantal
-            // 
-            this.txtAantal.Location = new System.Drawing.Point(136, 45);
-            this.txtAantal.Name = "txtAantal";
-            this.txtAantal.Size = new System.Drawing.Size(137, 22);
-            this.txtAantal.TabIndex = 12;
-            // 
-            // txtVoorwerp
-            // 
-            this.txtVoorwerp.Location = new System.Drawing.Point(136, 17);
-            this.txtVoorwerp.Name = "txtVoorwerp";
-            this.txtVoorwerp.Size = new System.Drawing.Size(137, 22);
-            this.txtVoorwerp.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(58, 76);
+            this.label6.Location = new System.Drawing.Point(44, 62);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 17);
+            this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Prijs:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 48);
+            this.label5.Location = new System.Drawing.Point(44, 39);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Aantal:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 20);
+            this.label4.Location = new System.Drawing.Point(44, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 17);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Voorwerp:";
             // 
+            // txtVoorwerp
+            // 
+            this.txtVoorwerp.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtVoorwerp.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtVoorwerp.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtVoorwerp.BorderThickness = 3;
+            this.txtVoorwerp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtVoorwerp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtVoorwerp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtVoorwerp.isPassword = false;
+            this.txtVoorwerp.Location = new System.Drawing.Point(102, 7);
+            this.txtVoorwerp.Margin = new System.Windows.Forms.Padding(4);
+            this.txtVoorwerp.Name = "txtVoorwerp";
+            this.txtVoorwerp.Size = new System.Drawing.Size(98, 24);
+            this.txtVoorwerp.TabIndex = 75;
+            this.txtVoorwerp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtVoorwerp.Visible = false;
+            // 
+            // txtAantal
+            // 
+            this.txtAantal.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAantal.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAantal.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtAantal.BorderThickness = 3;
+            this.txtAantal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAantal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAantal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAantal.isPassword = false;
+            this.txtAantal.Location = new System.Drawing.Point(102, 31);
+            this.txtAantal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAantal.Name = "txtAantal";
+            this.txtAantal.Size = new System.Drawing.Size(98, 24);
+            this.txtAantal.TabIndex = 76;
+            this.txtAantal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAantal.Visible = false;
+            // 
+            // txtPrijs
+            // 
+            this.txtPrijs.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPrijs.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPrijs.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtPrijs.BorderThickness = 3;
+            this.txtPrijs.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrijs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPrijs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPrijs.isPassword = false;
+            this.txtPrijs.Location = new System.Drawing.Point(102, 63);
+            this.txtPrijs.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrijs.Name = "txtPrijs";
+            this.txtPrijs.Size = new System.Drawing.Size(98, 24);
+            this.txtPrijs.TabIndex = 77;
+            this.txtPrijs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPrijs.Visible = false;
+            // 
+            // btnVoegToe
+            // 
+            this.btnVoegToe.ActiveBorderThickness = 1;
+            this.btnVoegToe.ActiveCornerRadius = 20;
+            this.btnVoegToe.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnVoegToe.ActiveForecolor = System.Drawing.Color.White;
+            this.btnVoegToe.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnVoegToe.BackColor = System.Drawing.SystemColors.Control;
+            this.btnVoegToe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVoegToe.BackgroundImage")));
+            this.btnVoegToe.ButtonText = "Toevoegen";
+            this.btnVoegToe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoegToe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoegToe.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnVoegToe.IdleBorderThickness = 1;
+            this.btnVoegToe.IdleCornerRadius = 20;
+            this.btnVoegToe.IdleFillColor = System.Drawing.Color.White;
+            this.btnVoegToe.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnVoegToe.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnVoegToe.Location = new System.Drawing.Point(248, 7);
+            this.btnVoegToe.Margin = new System.Windows.Forms.Padding(5);
+            this.btnVoegToe.Name = "btnVoegToe";
+            this.btnVoegToe.Size = new System.Drawing.Size(164, 65);
+            this.btnVoegToe.TabIndex = 78;
+            this.btnVoegToe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AANKOOP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 301);
+            this.ClientSize = new System.Drawing.Size(426, 245);
             this.Controls.Add(this.btnVoegToe);
-            this.Controls.Add(this.lstAankoop);
             this.Controls.Add(this.txtPrijs);
             this.Controls.Add(this.txtAantal);
             this.Controls.Add(this.txtVoorwerp);
+            this.Controls.Add(this.lstAankoop);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AANKOOP";
             this.Text = "AANKOOP";
             this.Load += new System.EventHandler(this.AANKOOP_Load);
@@ -127,14 +180,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnVoegToe;
         private System.Windows.Forms.ListBox lstAankoop;
-        private System.Windows.Forms.TextBox txtPrijs;
-        private System.Windows.Forms.TextBox txtAantal;
-        private System.Windows.Forms.TextBox txtVoorwerp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtVoorwerp;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAantal;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPrijs;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnVoegToe;
     }
 }
