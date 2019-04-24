@@ -12,6 +12,7 @@ namespace Versie3
 {
     public partial class MENU : Form
     {
+        public accLeiding huidigaccount;
         public MENU()
         {
             InitializeComponent();

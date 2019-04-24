@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Versie3
 {
-    class accLeiding
+    public class accLeiding
     {
         public string Naam;
         public string ANaam;

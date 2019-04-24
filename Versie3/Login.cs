@@ -23,8 +23,10 @@ namespace Versie3
             if (b.tryLogIn(txtNaam.Text, txtWachtwoord.Text))
             {
                 accLeiding acc = b.logIn(txtNaam.Text);
-                //login gelukt met het account acc
-                MessageBox.Show("Ingelogt");
+                MENU m = new MENU();
+                m.huidigaccount = acc;
+                m.Show();
+                this.Hide();
             }
             else
             {

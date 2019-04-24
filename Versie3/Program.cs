@@ -16,7 +16,8 @@ namespace Versie3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MENU());
+            new Login().Show();
+            Application.Run();
         }
     }
 }

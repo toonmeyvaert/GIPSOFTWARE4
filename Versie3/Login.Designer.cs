@@ -89,9 +89,9 @@
             // 
             // txtWachtwoord
             // 
-            this.txtWachtwoord.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtWachtwoord.BorderColorFocused = System.Drawing.Color.Red;
             this.txtWachtwoord.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtWachtwoord.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtWachtwoord.BorderColorMouseHover = System.Drawing.Color.Red;
             this.txtWachtwoord.BorderThickness = 3;
             this.txtWachtwoord.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtWachtwoord.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -106,9 +106,9 @@
             // 
             // txtNaam
             // 
-            this.txtNaam.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtNaam.BorderColorFocused = System.Drawing.Color.Red;
             this.txtNaam.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNaam.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtNaam.BorderColorMouseHover = System.Drawing.Color.Red;
             this.txtNaam.BorderThickness = 3;
             this.txtNaam.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -132,6 +132,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
