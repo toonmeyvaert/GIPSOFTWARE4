@@ -131,5 +131,49 @@ namespace Versie3
             conn.Close();
         }
 
+        public bool loginCorrect(string naam, string ww)
+        {
+            MySqlCommand cmd = new MySqlCommand("select * from leiding where LoginNaam='" + naam + "'", conn);
+            conn.Open();
+            MySqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                if (dr["LoginWachtwoord"].ToString() == ww)
+                {
+                    conn.Close();
+                    return true;
+                }
+                else
+                {
+                    conn.Close();
+                    return false;
+                }
+            }
+            conn.Close();
+            return false;
+        }
+        public accLeiding logIn(string naam)
+        {
+            MySqlCommand cmd = new MySqlCommand("select * from leiding where LoginNaam='" + naam + "'", conn);
+            conn.Open();
+            MySqlDataReader dr = cmd.ExecuteReader();
+            accLeiding acc = new accLeiding();
+            while (dr.Read())
+            {
+                acc.Naam = dr["Naam"].ToString();
+                acc.ANaam = dr["Achternaam"].ToString();
+                acc.Wachtwoord = dr["LoginWachtwoord"].ToString();
+                if (dr["Hoofdleiding"].ToString().ToLower() == "ja")
+                {
+                    acc.Hoofdleiding = true;
+                }
+                else
+                {
+                    acc.Hoofdleiding = false;
+                }
+            }
+            conn.Close();
+            return acc;
+        }
     }
 }

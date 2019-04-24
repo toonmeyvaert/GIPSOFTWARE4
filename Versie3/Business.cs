@@ -132,7 +132,15 @@ namespace Versie3
             pers.addKlusje(k);
         }
 
-
+        public accLeiding logIn(string naam)
+        {
+            return pers.logIn(naam);
+        }
+        public bool tryLogIn(string naam, string ww)
+        {
+            if (pers.loginCorrect(naam, ww))
+            { return true; } else { return false; }
+        }
 
 
 
