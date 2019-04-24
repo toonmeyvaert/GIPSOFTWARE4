@@ -28,56 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnToev = new System.Windows.Forms.Button();
-            this.txtBeschikbaarheid = new System.Windows.Forms.TextBox();
-            this.txtAantal = new System.Windows.Forms.TextBox();
-            this.txtNaam = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MATERIAAL));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReserveren = new System.Windows.Forms.Button();
-            this.btnToevoegen = new System.Windows.Forms.Button();
             this.lstMateriaal = new System.Windows.Forms.ListBox();
+            this.txtNaam = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtAantal = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtBeschikbaarheid = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnToev = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnReserveren = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnToevoegen = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
-            // 
-            // btnToev
-            // 
-            this.btnToev.Location = new System.Drawing.Point(393, 72);
-            this.btnToev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnToev.Name = "btnToev";
-            this.btnToev.Size = new System.Drawing.Size(98, 24);
-            this.btnToev.TabIndex = 19;
-            this.btnToev.Text = "Toevoegen";
-            this.btnToev.UseVisualStyleBackColor = true;
-            this.btnToev.Visible = false;
-            this.btnToev.Click += new System.EventHandler(this.btnToev_Click_1);
-            // 
-            // txtBeschikbaarheid
-            // 
-            this.txtBeschikbaarheid.Location = new System.Drawing.Point(393, 50);
-            this.txtBeschikbaarheid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtBeschikbaarheid.Name = "txtBeschikbaarheid";
-            this.txtBeschikbaarheid.Size = new System.Drawing.Size(99, 20);
-            this.txtBeschikbaarheid.TabIndex = 18;
-            this.txtBeschikbaarheid.Visible = false;
-            // 
-            // txtAantal
-            // 
-            this.txtAantal.Location = new System.Drawing.Point(393, 27);
-            this.txtAantal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtAantal.Name = "txtAantal";
-            this.txtAantal.Size = new System.Drawing.Size(99, 20);
-            this.txtAantal.TabIndex = 17;
-            this.txtAantal.Visible = false;
-            // 
-            // txtNaam
-            // 
-            this.txtNaam.Location = new System.Drawing.Point(393, 4);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNaam.Name = "txtNaam";
-            this.txtNaam.Size = new System.Drawing.Size(99, 20);
-            this.txtNaam.TabIndex = 16;
-            this.txtNaam.Visible = false;
             // 
             // label3
             // 
@@ -112,41 +74,151 @@
             this.label1.Text = "Naam:";
             this.label1.Visible = false;
             // 
-            // btnReserveren
-            // 
-            this.btnReserveren.Location = new System.Drawing.Point(145, 228);
-            this.btnReserveren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnReserveren.Name = "btnReserveren";
-            this.btnReserveren.Size = new System.Drawing.Size(142, 24);
-            this.btnReserveren.TabIndex = 12;
-            this.btnReserveren.Text = "Reserveren";
-            this.btnReserveren.UseVisualStyleBackColor = true;
-            // 
-            // btnToevoegen
-            // 
-            this.btnToevoegen.Location = new System.Drawing.Point(3, 228);
-            this.btnToevoegen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnToevoegen.Name = "btnToevoegen";
-            this.btnToevoegen.Size = new System.Drawing.Size(142, 24);
-            this.btnToevoegen.TabIndex = 11;
-            this.btnToevoegen.Text = "Toevoegen";
-            this.btnToevoegen.UseVisualStyleBackColor = true;
-            this.btnToevoegen.Click += new System.EventHandler(this.btnToevoegen_Click_1);
-            // 
             // lstMateriaal
             // 
             this.lstMateriaal.FormattingEnabled = true;
             this.lstMateriaal.Location = new System.Drawing.Point(3, 12);
-            this.lstMateriaal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstMateriaal.Margin = new System.Windows.Forms.Padding(2);
             this.lstMateriaal.Name = "lstMateriaal";
-            this.lstMateriaal.Size = new System.Drawing.Size(285, 212);
+            this.lstMateriaal.Size = new System.Drawing.Size(285, 186);
             this.lstMateriaal.TabIndex = 10;
+            // 
+            // txtNaam
+            // 
+            this.txtNaam.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtNaam.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNaam.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtNaam.BorderThickness = 3;
+            this.txtNaam.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNaam.isPassword = false;
+            this.txtNaam.Location = new System.Drawing.Point(393, -3);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNaam.Name = "txtNaam";
+            this.txtNaam.Size = new System.Drawing.Size(98, 24);
+            this.txtNaam.TabIndex = 74;
+            this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNaam.Visible = false;
+            // 
+            // txtAantal
+            // 
+            this.txtAantal.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAantal.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAantal.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtAantal.BorderThickness = 3;
+            this.txtAantal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAantal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAantal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAantal.isPassword = false;
+            this.txtAantal.Location = new System.Drawing.Point(393, 24);
+            this.txtAantal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAantal.Name = "txtAantal";
+            this.txtAantal.Size = new System.Drawing.Size(98, 24);
+            this.txtAantal.TabIndex = 75;
+            this.txtAantal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAantal.Visible = false;
+            // 
+            // txtBeschikbaarheid
+            // 
+            this.txtBeschikbaarheid.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBeschikbaarheid.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBeschikbaarheid.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtBeschikbaarheid.BorderThickness = 3;
+            this.txtBeschikbaarheid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBeschikbaarheid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBeschikbaarheid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBeschikbaarheid.isPassword = false;
+            this.txtBeschikbaarheid.Location = new System.Drawing.Point(393, 49);
+            this.txtBeschikbaarheid.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBeschikbaarheid.Name = "txtBeschikbaarheid";
+            this.txtBeschikbaarheid.Size = new System.Drawing.Size(98, 25);
+            this.txtBeschikbaarheid.TabIndex = 76;
+            this.txtBeschikbaarheid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBeschikbaarheid.Visible = false;
+            // 
+            // btnToev
+            // 
+            this.btnToev.ActiveBorderThickness = 1;
+            this.btnToev.ActiveCornerRadius = 20;
+            this.btnToev.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnToev.ActiveForecolor = System.Drawing.Color.White;
+            this.btnToev.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnToev.BackColor = System.Drawing.SystemColors.Control;
+            this.btnToev.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnToev.BackgroundImage")));
+            this.btnToev.ButtonText = "Toevoegen";
+            this.btnToev.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnToev.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToev.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnToev.IdleBorderThickness = 1;
+            this.btnToev.IdleCornerRadius = 20;
+            this.btnToev.IdleFillColor = System.Drawing.Color.White;
+            this.btnToev.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnToev.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnToev.Location = new System.Drawing.Point(370, 83);
+            this.btnToev.Margin = new System.Windows.Forms.Padding(5);
+            this.btnToev.Name = "btnToev";
+            this.btnToev.Size = new System.Drawing.Size(121, 41);
+            this.btnToev.TabIndex = 77;
+            this.btnToev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnReserveren
+            // 
+            this.btnReserveren.ActiveBorderThickness = 1;
+            this.btnReserveren.ActiveCornerRadius = 20;
+            this.btnReserveren.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnReserveren.ActiveForecolor = System.Drawing.Color.White;
+            this.btnReserveren.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnReserveren.BackColor = System.Drawing.SystemColors.Control;
+            this.btnReserveren.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReserveren.BackgroundImage")));
+            this.btnReserveren.ButtonText = "Reserveren";
+            this.btnReserveren.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReserveren.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserveren.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnReserveren.IdleBorderThickness = 1;
+            this.btnReserveren.IdleCornerRadius = 20;
+            this.btnReserveren.IdleFillColor = System.Drawing.Color.White;
+            this.btnReserveren.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnReserveren.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnReserveren.Location = new System.Drawing.Point(152, 211);
+            this.btnReserveren.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReserveren.Name = "btnReserveren";
+            this.btnReserveren.Size = new System.Drawing.Size(121, 41);
+            this.btnReserveren.TabIndex = 78;
+            this.btnReserveren.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnToevoegen
+            // 
+            this.btnToevoegen.ActiveBorderThickness = 1;
+            this.btnToevoegen.ActiveCornerRadius = 20;
+            this.btnToevoegen.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnToevoegen.ActiveForecolor = System.Drawing.Color.White;
+            this.btnToevoegen.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnToevoegen.BackColor = System.Drawing.SystemColors.Control;
+            this.btnToevoegen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnToevoegen.BackgroundImage")));
+            this.btnToevoegen.ButtonText = "Toevoegen";
+            this.btnToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnToevoegen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToevoegen.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnToevoegen.IdleBorderThickness = 1;
+            this.btnToevoegen.IdleCornerRadius = 20;
+            this.btnToevoegen.IdleFillColor = System.Drawing.Color.White;
+            this.btnToevoegen.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnToevoegen.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnToevoegen.Location = new System.Drawing.Point(14, 211);
+            this.btnToevoegen.Margin = new System.Windows.Forms.Padding(5);
+            this.btnToevoegen.Name = "btnToevoegen";
+            this.btnToevoegen.Size = new System.Drawing.Size(121, 41);
+            this.btnToevoegen.TabIndex = 79;
+            this.btnToevoegen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MATERIAAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 264);
+            this.Controls.Add(this.btnToevoegen);
+            this.Controls.Add(this.btnReserveren);
             this.Controls.Add(this.btnToev);
             this.Controls.Add(this.txtBeschikbaarheid);
             this.Controls.Add(this.txtAantal);
@@ -154,10 +226,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnReserveren);
-            this.Controls.Add(this.btnToevoegen);
             this.Controls.Add(this.lstMateriaal);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MATERIAAL";
             this.Text = "MATERIAAL";
             this.Load += new System.EventHandler(this.MATERIAAL_Load);
@@ -167,16 +237,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnToev;
-        private System.Windows.Forms.TextBox txtBeschikbaarheid;
-        private System.Windows.Forms.TextBox txtAantal;
-        private System.Windows.Forms.TextBox txtNaam;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnReserveren;
-        private System.Windows.Forms.Button btnToevoegen;
         private System.Windows.Forms.ListBox lstMateriaal;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtNaam;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAantal;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtBeschikbaarheid;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnToev;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnReserveren;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnToevoegen;
     }
 }

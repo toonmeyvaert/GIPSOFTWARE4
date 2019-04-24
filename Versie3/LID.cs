@@ -39,7 +39,7 @@ namespace Versie3
 
         private void btnAk_Click(object sender, EventArgs e)
         {
-            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtAdres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
+            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtadres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
             vulForm();
         }
 
@@ -50,6 +50,32 @@ namespace Versie3
 
         private void btnLid_Click(object sender, EventArgs e)
         {
+         
+        }
+
+        private void txtTak_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAk_Click_1(object sender, EventArgs e)
+        {
+            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtadres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
+            vulForm();
+        }
+
+        private void txtAdres_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void btnLid_Click_1(object sender, EventArgs e)
+        {
             btnAk.Show();
             label1.Show();
             label2.Show();
@@ -59,20 +85,25 @@ namespace Versie3
             label6.Show();
             label7.Show();
             txtAchternaam.Show();
-            txtAdres.Show();
+            txtadres.Show();
             txtEmail.Show();
             txtGeboorte.Show();
             txtMed.Show();
             txtNaam.Show();
-            cmbTak.Show();  
+            cmbTak.Show();
         }
 
-        private void txtTak_TextChanged(object sender, EventArgs e)
+        private void txtAdres_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtadres_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
         {
 
         }

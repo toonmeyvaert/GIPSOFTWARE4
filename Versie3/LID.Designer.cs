@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LID));
             this.label7 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtAdres = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtMed = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtGeboorte = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtAchternaam = new System.Windows.Forms.TextBox();
-            this.txtNaam = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLid = new System.Windows.Forms.Button();
             this.lstLid = new System.Windows.Forms.ListBox();
-            this.btnAk = new System.Windows.Forms.Button();
             this.cmbTak = new System.Windows.Forms.ComboBox();
+            this.btnLid = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAk = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtadres = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtAchternaam = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtNaam = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtGeboorte = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtMed = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.SuspendLayout();
             // 
             // label7
@@ -57,24 +58,6 @@
             this.label7.TabIndex = 62;
             this.label7.Text = "Tak/Groep:";
             this.label7.Visible = false;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(201, 432);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(108, 20);
-            this.txtEmail.TabIndex = 61;
-            this.txtEmail.Visible = false;
-            // 
-            // txtAdres
-            // 
-            this.txtAdres.Location = new System.Drawing.Point(201, 385);
-            this.txtAdres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(108, 20);
-            this.txtAdres.TabIndex = 60;
-            this.txtAdres.Visible = false;
             // 
             // label5
             // 
@@ -98,15 +81,6 @@
             this.label6.Text = "Adres:";
             this.label6.Visible = false;
             // 
-            // txtMed
-            // 
-            this.txtMed.Location = new System.Drawing.Point(362, 342);
-            this.txtMed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMed.Name = "txtMed";
-            this.txtMed.Size = new System.Drawing.Size(102, 20);
-            this.txtMed.TabIndex = 57;
-            this.txtMed.Visible = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -118,15 +92,6 @@
             this.label4.Text = "MedischeFiche";
             this.label4.Visible = false;
             // 
-            // txtGeboorte
-            // 
-            this.txtGeboorte.Location = new System.Drawing.Point(362, 297);
-            this.txtGeboorte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtGeboorte.Name = "txtGeboorte";
-            this.txtGeboorte.Size = new System.Drawing.Size(102, 20);
-            this.txtGeboorte.TabIndex = 55;
-            this.txtGeboorte.Visible = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -137,24 +102,6 @@
             this.label3.TabIndex = 54;
             this.label3.Text = "Geboortejaar:";
             this.label3.Visible = false;
-            // 
-            // txtAchternaam
-            // 
-            this.txtAchternaam.Location = new System.Drawing.Point(201, 342);
-            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtAchternaam.Name = "txtAchternaam";
-            this.txtAchternaam.Size = new System.Drawing.Size(108, 20);
-            this.txtAchternaam.TabIndex = 53;
-            this.txtAchternaam.Visible = false;
-            // 
-            // txtNaam
-            // 
-            this.txtNaam.Location = new System.Drawing.Point(201, 295);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNaam.Name = "txtNaam";
-            this.txtNaam.Size = new System.Drawing.Size(108, 20);
-            this.txtNaam.TabIndex = 52;
-            this.txtNaam.Visible = false;
             // 
             // label2
             // 
@@ -178,38 +125,15 @@
             this.label1.Text = "Naam:";
             this.label1.Visible = false;
             // 
-            // btnLid
-            // 
-            this.btnLid.Location = new System.Drawing.Point(34, 297);
-            this.btnLid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnLid.Name = "btnLid";
-            this.btnLid.Size = new System.Drawing.Size(118, 47);
-            this.btnLid.TabIndex = 49;
-            this.btnLid.Text = "Voeg lid toe";
-            this.btnLid.UseVisualStyleBackColor = true;
-            this.btnLid.Click += new System.EventHandler(this.btnLid_Click);
-            // 
             // lstLid
             // 
             this.lstLid.FormattingEnabled = true;
             this.lstLid.Location = new System.Drawing.Point(34, 41);
-            this.lstLid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstLid.Margin = new System.Windows.Forms.Padding(2);
             this.lstLid.Name = "lstLid";
             this.lstLid.Size = new System.Drawing.Size(549, 238);
             this.lstLid.TabIndex = 48;
             this.lstLid.SelectedIndexChanged += new System.EventHandler(this.lstLid_SelectedIndexChanged);
-            // 
-            // btnAk
-            // 
-            this.btnAk.Location = new System.Drawing.Point(362, 424);
-            this.btnAk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAk.Name = "btnAk";
-            this.btnAk.Size = new System.Drawing.Size(106, 34);
-            this.btnAk.TabIndex = 64;
-            this.btnAk.Text = "Toevoegen";
-            this.btnAk.UseVisualStyleBackColor = true;
-            this.btnAk.Visible = false;
-            this.btnAk.Click += new System.EventHandler(this.btnAk_Click);
             // 
             // cmbTak
             // 
@@ -228,29 +152,191 @@
             this.cmbTak.Visible = false;
             this.cmbTak.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // btnLid
+            // 
+            this.btnLid.ActiveBorderThickness = 1;
+            this.btnLid.ActiveCornerRadius = 20;
+            this.btnLid.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnLid.ActiveForecolor = System.Drawing.Color.White;
+            this.btnLid.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLid.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLid.BackgroundImage")));
+            this.btnLid.ButtonText = "Voeg lid toe";
+            this.btnLid.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLid.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLid.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLid.IdleBorderThickness = 1;
+            this.btnLid.IdleCornerRadius = 20;
+            this.btnLid.IdleFillColor = System.Drawing.Color.White;
+            this.btnLid.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnLid.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLid.Location = new System.Drawing.Point(11, 321);
+            this.btnLid.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLid.Name = "btnLid";
+            this.btnLid.Size = new System.Drawing.Size(181, 41);
+            this.btnLid.TabIndex = 66;
+            this.btnLid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLid.Click += new System.EventHandler(this.btnLid_Click_1);
+            // 
+            // btnAk
+            // 
+            this.btnAk.ActiveBorderThickness = 1;
+            this.btnAk.ActiveCornerRadius = 20;
+            this.btnAk.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAk.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAk.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAk.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAk.BackgroundImage")));
+            this.btnAk.ButtonText = "Toevoegen";
+            this.btnAk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAk.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAk.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAk.IdleBorderThickness = 1;
+            this.btnAk.IdleCornerRadius = 20;
+            this.btnAk.IdleFillColor = System.Drawing.Color.White;
+            this.btnAk.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnAk.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAk.Location = new System.Drawing.Point(362, 416);
+            this.btnAk.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAk.Name = "btnAk";
+            this.btnAk.Size = new System.Drawing.Size(121, 41);
+            this.btnAk.TabIndex = 67;
+            this.btnAk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAk.Click += new System.EventHandler(this.btnAk_Click_1);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtEmail.BorderThickness = 3;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.isPassword = false;
+            this.txtEmail.Location = new System.Drawing.Point(201, 433);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(136, 24);
+            this.txtEmail.TabIndex = 68;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEmail.Visible = false;
+            // 
+            // txtadres
+            // 
+            this.txtadres.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtadres.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtadres.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtadres.BorderThickness = 3;
+            this.txtadres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtadres.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtadres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtadres.isPassword = false;
+            this.txtadres.Location = new System.Drawing.Point(201, 387);
+            this.txtadres.Margin = new System.Windows.Forms.Padding(4);
+            this.txtadres.Name = "txtadres";
+            this.txtadres.Size = new System.Drawing.Size(136, 24);
+            this.txtadres.TabIndex = 69;
+            this.txtadres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtadres.Visible = false;
+            this.txtadres.OnValueChanged += new System.EventHandler(this.txtadres_OnValueChanged);
+            // 
+            // txtAchternaam
+            // 
+            this.txtAchternaam.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAchternaam.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAchternaam.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtAchternaam.BorderThickness = 3;
+            this.txtAchternaam.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAchternaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAchternaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAchternaam.isPassword = false;
+            this.txtAchternaam.Location = new System.Drawing.Point(201, 343);
+            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAchternaam.Name = "txtAchternaam";
+            this.txtAchternaam.Size = new System.Drawing.Size(136, 24);
+            this.txtAchternaam.TabIndex = 70;
+            this.txtAchternaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAchternaam.Visible = false;
+            // 
+            // txtNaam
+            // 
+            this.txtNaam.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtNaam.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNaam.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtNaam.BorderThickness = 3;
+            this.txtNaam.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNaam.isPassword = false;
+            this.txtNaam.Location = new System.Drawing.Point(201, 297);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNaam.Name = "txtNaam";
+            this.txtNaam.Size = new System.Drawing.Size(136, 24);
+            this.txtNaam.TabIndex = 71;
+            this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNaam.Visible = false;
+            // 
+            // txtGeboorte
+            // 
+            this.txtGeboorte.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtGeboorte.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtGeboorte.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtGeboorte.BorderThickness = 3;
+            this.txtGeboorte.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGeboorte.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtGeboorte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtGeboorte.isPassword = false;
+            this.txtGeboorte.Location = new System.Drawing.Point(362, 298);
+            this.txtGeboorte.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGeboorte.Name = "txtGeboorte";
+            this.txtGeboorte.Size = new System.Drawing.Size(136, 24);
+            this.txtGeboorte.TabIndex = 72;
+            this.txtGeboorte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtGeboorte.Visible = false;
+            // 
+            // txtMed
+            // 
+            this.txtMed.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtMed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMed.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtMed.BorderThickness = 3;
+            this.txtMed.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMed.isPassword = false;
+            this.txtMed.Location = new System.Drawing.Point(362, 341);
+            this.txtMed.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMed.Name = "txtMed";
+            this.txtMed.Size = new System.Drawing.Size(136, 24);
+            this.txtMed.TabIndex = 73;
+            this.txtMed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMed.Visible = false;
+            // 
             // LID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 492);
-            this.Controls.Add(this.cmbTak);
-            this.Controls.Add(this.btnAk);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtMed);
+            this.Controls.Add(this.txtGeboorte);
+            this.Controls.Add(this.txtNaam);
+            this.Controls.Add(this.txtAchternaam);
+            this.Controls.Add(this.txtadres);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtAdres);
+            this.Controls.Add(this.btnAk);
+            this.Controls.Add(this.btnLid);
+            this.Controls.Add(this.cmbTak);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtMed);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtGeboorte);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtAchternaam);
-            this.Controls.Add(this.txtNaam);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLid);
             this.Controls.Add(this.lstLid);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LID";
             this.Text = "LID";
             this.Load += new System.EventHandler(this.LID_Load);
@@ -261,21 +347,21 @@
 
         #endregion
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtAdres;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtMed;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtGeboorte;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtAchternaam;
-        private System.Windows.Forms.TextBox txtNaam;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnLid;
         private System.Windows.Forms.ListBox lstLid;
-        private System.Windows.Forms.Button btnAk;
         private System.Windows.Forms.ComboBox cmbTak;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnLid;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAk;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtEmail;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtadres;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAchternaam;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtNaam;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtGeboorte;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtMed;
     }
 }

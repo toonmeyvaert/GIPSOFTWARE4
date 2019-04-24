@@ -36,9 +36,9 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtKlusje = new System.Windows.Forms.TextBox();
-            this.txtVerantwoordelijke = new System.Windows.Forms.TextBox();
-            this.txtPlanning = new System.Windows.Forms.TextBox();
+            this.txtKlusje = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPlanning = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtVerantwoordelijke = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.SuspendLayout();
             // 
             // lstK
@@ -141,32 +141,65 @@
             // 
             // txtKlusje
             // 
-            this.txtKlusje.Location = new System.Drawing.Point(262, 245);
+            this.txtKlusje.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtKlusje.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtKlusje.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtKlusje.BorderThickness = 3;
+            this.txtKlusje.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKlusje.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtKlusje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtKlusje.isPassword = false;
+            this.txtKlusje.Location = new System.Drawing.Point(262, 241);
+            this.txtKlusje.Margin = new System.Windows.Forms.Padding(4);
             this.txtKlusje.Name = "txtKlusje";
-            this.txtKlusje.Size = new System.Drawing.Size(139, 20);
-            this.txtKlusje.TabIndex = 16;
-            // 
-            // txtVerantwoordelijke
-            // 
-            this.txtVerantwoordelijke.Location = new System.Drawing.Point(262, 278);
-            this.txtVerantwoordelijke.Name = "txtVerantwoordelijke";
-            this.txtVerantwoordelijke.Size = new System.Drawing.Size(139, 20);
-            this.txtVerantwoordelijke.TabIndex = 17;
+            this.txtKlusje.Size = new System.Drawing.Size(136, 24);
+            this.txtKlusje.TabIndex = 72;
+            this.txtKlusje.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtKlusje.Visible = false;
             // 
             // txtPlanning
             // 
-            this.txtPlanning.Location = new System.Drawing.Point(262, 315);
+            this.txtPlanning.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPlanning.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPlanning.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtPlanning.BorderThickness = 3;
+            this.txtPlanning.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPlanning.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPlanning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPlanning.isPassword = false;
+            this.txtPlanning.Location = new System.Drawing.Point(262, 307);
+            this.txtPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlanning.Name = "txtPlanning";
-            this.txtPlanning.Size = new System.Drawing.Size(139, 20);
-            this.txtPlanning.TabIndex = 18;
+            this.txtPlanning.Size = new System.Drawing.Size(136, 24);
+            this.txtPlanning.TabIndex = 73;
+            this.txtPlanning.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPlanning.Visible = false;
+            // 
+            // txtVerantwoordelijke
+            // 
+            this.txtVerantwoordelijke.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtVerantwoordelijke.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtVerantwoordelijke.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtVerantwoordelijke.BorderThickness = 3;
+            this.txtVerantwoordelijke.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtVerantwoordelijke.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtVerantwoordelijke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtVerantwoordelijke.isPassword = false;
+            this.txtVerantwoordelijke.Location = new System.Drawing.Point(262, 274);
+            this.txtVerantwoordelijke.Margin = new System.Windows.Forms.Padding(4);
+            this.txtVerantwoordelijke.Name = "txtVerantwoordelijke";
+            this.txtVerantwoordelijke.Size = new System.Drawing.Size(136, 24);
+            this.txtVerantwoordelijke.TabIndex = 74;
+            this.txtVerantwoordelijke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtVerantwoordelijke.Visible = false;
             // 
             // HOOFD_KLUSJE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 442);
-            this.Controls.Add(this.txtPlanning);
             this.Controls.Add(this.txtVerantwoordelijke);
+            this.Controls.Add(this.txtPlanning);
             this.Controls.Add(this.txtKlusje);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -192,8 +225,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private System.Windows.Forms.TextBox txtKlusje;
-        private System.Windows.Forms.TextBox txtVerantwoordelijke;
-        private System.Windows.Forms.TextBox txtPlanning;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtKlusje;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPlanning;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtVerantwoordelijke;
     }
 }
