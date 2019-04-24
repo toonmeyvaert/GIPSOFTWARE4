@@ -36,7 +36,9 @@
       <HintPath>..\Dll\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -58,6 +60,7 @@
       <DependentUpon>AANKOOP.cs</DependentUpon>
     </Compile>
     <Compile Include="AankoopK.cs" />
+    <Compile Include="accLeiding.cs" />
     <Compile Include="Business.cs" />
     <Compile Include="HOOFD_KLUSJE.cs">
       <SubType>Form</SubType>
@@ -74,6 +77,12 @@
     <Compile Include="KlusjeK.cs" />
     <Compile Include="LeidingK.cs" />
     <Compile Include="LidK.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MateriaalK.cs" />
     <Compile Include="MENU.cs">
       <SubType>Form</SubType>
@@ -116,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LID.resx">
       <DependentUpon>LID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MATERIAAL.resx">
       <DependentUpon>MATERIAAL.cs</DependentUpon>
