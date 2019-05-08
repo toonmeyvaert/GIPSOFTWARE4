@@ -75,6 +75,12 @@
       <DependentUpon>KLUSJE.cs</DependentUpon>
     </Compile>
     <Compile Include="KlusjeK.cs" />
+    <Compile Include="LEDEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEDEN.Designer.cs">
+      <DependentUpon>LEDEN.cs</DependentUpon>
+    </Compile>
     <Compile Include="LeidingK.cs" />
     <Compile Include="LidK.cs" />
     <Compile Include="Login.cs">
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KLUSJE.resx">
       <DependentUpon>KLUSJE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEDEN.resx">
+      <DependentUpon>LEDEN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LEIDING.resx">
       <DependentUpon>LEIDING.cs</DependentUpon>

@@ -20,7 +20,7 @@ namespace Versie3
 
         private void lidToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LID frm = new LID();
+            LEDEN frm = new LEDEN();
             frm.ShowDialog();
         }
 
@@ -46,6 +46,11 @@ namespace Versie3
         {
             KLUSJE frm = new KLUSJE();
             frm.ShowDialog();
+        }
+
+        private void MENU_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

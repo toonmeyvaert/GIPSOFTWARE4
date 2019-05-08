@@ -34,5 +34,10 @@ namespace Versie3
                 MessageBox.Show("Login fout.");
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
