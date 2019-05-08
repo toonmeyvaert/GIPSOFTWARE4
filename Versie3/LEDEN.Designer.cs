@@ -37,7 +37,6 @@
             this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnAk = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLid = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.cmbTak = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lstLid = new System.Windows.Forms.ListBox();
+            this.cmbTak = new Bunifu.Framework.UI.BunifuDropdown();
             this.SuspendLayout();
             // 
             // txtMed
@@ -65,6 +65,7 @@
             this.txtMed.TabIndex = 90;
             this.txtMed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMed.Visible = false;
+            this.txtMed.OnValueChanged += new System.EventHandler(this.txtMed_OnValueChanged);
             // 
             // txtGeboorte
             // 
@@ -180,6 +181,7 @@
             this.btnAk.Size = new System.Drawing.Size(121, 41);
             this.btnAk.TabIndex = 84;
             this.btnAk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAk.Visible = false;
             this.btnAk.Click += new System.EventHandler(this.btnAk_Click_1);
             // 
             // btnLid
@@ -207,22 +209,6 @@
             this.btnLid.TabIndex = 83;
             this.btnLid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLid.Click += new System.EventHandler(this.btnLid_Click_1);
-            // 
-            // cmbTak
-            // 
-            this.cmbTak.FormattingEnabled = true;
-            this.cmbTak.Items.AddRange(new object[] {
-            "Kapoenen",
-            "Welpen",
-            "Wolven",
-            "Jong verkenners",
-            "Verkenners",
-            "Jin"});
-            this.cmbTak.Location = new System.Drawing.Point(364, 362);
-            this.cmbTak.Name = "cmbTak";
-            this.cmbTak.Size = new System.Drawing.Size(121, 21);
-            this.cmbTak.TabIndex = 82;
-            this.cmbTak.Visible = false;
             // 
             // label7
             // 
@@ -310,11 +296,35 @@
             this.lstLid.Size = new System.Drawing.Size(549, 238);
             this.lstLid.TabIndex = 74;
             // 
+            // cmbTak
+            // 
+            this.cmbTak.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTak.BorderRadius = 3;
+            this.cmbTak.DisabledColor = System.Drawing.Color.Gray;
+            this.cmbTak.ForeColor = System.Drawing.Color.White;
+            this.cmbTak.Items = new string[] {
+        "Kapoenen",
+        "Welpen",
+        "Wolven",
+        "Jong verkenners",
+        "Verkenners",
+        "Jin"};
+            this.cmbTak.Location = new System.Drawing.Point(364, 362);
+            this.cmbTak.Name = "cmbTak";
+            this.cmbTak.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cmbTak.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cmbTak.selectedIndex = -1;
+            this.cmbTak.Size = new System.Drawing.Size(136, 23);
+            this.cmbTak.TabIndex = 91;
+            this.cmbTak.Visible = false;
+            this.cmbTak.onItemSelected += new System.EventHandler(this.cmbTak_onItemSelected);
+            // 
             // LEDEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 453);
+            this.Controls.Add(this.cmbTak);
             this.Controls.Add(this.txtMed);
             this.Controls.Add(this.txtGeboorte);
             this.Controls.Add(this.txtNaam);
@@ -323,7 +333,6 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnAk);
             this.Controls.Add(this.btnLid);
-            this.Controls.Add(this.cmbTak);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -350,7 +359,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtEmail;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAk;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLid;
-        private System.Windows.Forms.ComboBox cmbTak;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -359,5 +367,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstLid;
+        private Bunifu.Framework.UI.BunifuDropdown cmbTak;
     }
 }

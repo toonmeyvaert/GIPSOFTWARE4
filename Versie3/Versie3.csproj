@@ -102,12 +102,6 @@
     <Compile Include="LEIDING.Designer.cs">
       <DependentUpon>LEIDING.cs</DependentUpon>
     </Compile>
-    <Compile Include="LID.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LID.Designer.cs">
-      <DependentUpon>LID.cs</DependentUpon>
-    </Compile>
     <Compile Include="MATERIAAL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LEIDING.resx">
       <DependentUpon>LEIDING.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LID.resx">
-      <DependentUpon>LID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

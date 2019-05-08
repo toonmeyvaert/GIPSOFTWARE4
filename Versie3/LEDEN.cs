@@ -89,6 +89,7 @@ namespace Versie3
             txtMed.Show();
             txtNaam.Show();
             cmbTak.Show();
+           
         }
 
         private void txtAdres_TextChanged(object sender, EventArgs e)
@@ -102,6 +103,21 @@ namespace Versie3
         }
 
         private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMed_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbTak_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbTak_onItemSelected(object sender, EventArgs e)
         {
 
         }
