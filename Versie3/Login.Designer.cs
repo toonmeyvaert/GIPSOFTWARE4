@@ -46,8 +46,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(84, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(63, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 33);
             this.label1.TabIndex = 2;
@@ -74,14 +73,14 @@
             this.btnLogin.IconVisible = false;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(32, 198);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogin.Location = new System.Drawing.Point(24, 161);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogin.OnHovercolor = System.Drawing.Color.Red;
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(225, 42);
+            this.btnLogin.Size = new System.Drawing.Size(169, 34);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,10 +98,10 @@
             this.txtWachtwoord.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtWachtwoord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtWachtwoord.isPassword = true;
-            this.txtWachtwoord.Location = new System.Drawing.Point(32, 139);
-            this.txtWachtwoord.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtWachtwoord.Location = new System.Drawing.Point(24, 113);
+            this.txtWachtwoord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtWachtwoord.Name = "txtWachtwoord";
-            this.txtWachtwoord.Size = new System.Drawing.Size(225, 50);
+            this.txtWachtwoord.Size = new System.Drawing.Size(169, 41);
             this.txtWachtwoord.TabIndex = 6;
             this.txtWachtwoord.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -116,24 +115,23 @@
             this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNaam.isPassword = false;
-            this.txtNaam.Location = new System.Drawing.Point(32, 79);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNaam.Location = new System.Drawing.Point(24, 64);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNaam.Name = "txtNaam";
-            this.txtNaam.Size = new System.Drawing.Size(225, 50);
+            this.txtNaam.Size = new System.Drawing.Size(169, 41);
             this.txtNaam.TabIndex = 7;
             this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 279);
+            this.ClientSize = new System.Drawing.Size(225, 227);
             this.Controls.Add(this.txtNaam);
             this.Controls.Add(this.txtWachtwoord);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

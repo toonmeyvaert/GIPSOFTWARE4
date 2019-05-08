@@ -71,15 +71,11 @@ namespace Versie3
             get { return _LeidingK; }
             set { _LeidingK = value; }
         }
-        public List<string> getLeiding()
+        public List<LeidingK> getLeiding()
         {
-            List<string> result = new List<string>();
+            List<LeidingK> result = new List<LeidingK>();
 
-            foreach (LeidingK item in Leidingks)
-            {
-                result.Add(item.ToString());
-            }
-            return result;
+            return Leidingks;
         }
         public void voegToe(string pnaam, string pachternaam, string ptak, string pstart, string phoofd)
         {

@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lstLeiding = new System.Windows.Forms.ListBox();
             this.txtNaam = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtAchternaam = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtHoofdLeiding = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -42,6 +41,12 @@
             this.txtTak = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnAk = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLeiding = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lvLeiding = new System.Windows.Forms.ListView();
+            this.chNaam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAchternaam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chGroep = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chStartLeiding = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chHoofdLeiding = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label7
@@ -99,16 +104,6 @@
             this.label1.TabIndex = 67;
             this.label1.Text = "Naam:";
             this.label1.Visible = false;
-            // 
-            // lstLeiding
-            // 
-            this.lstLeiding.FormattingEnabled = true;
-            this.lstLeiding.Location = new System.Drawing.Point(80, 34);
-            this.lstLeiding.Margin = new System.Windows.Forms.Padding(2);
-            this.lstLeiding.Name = "lstLeiding";
-            this.lstLeiding.Size = new System.Drawing.Size(549, 238);
-            this.lstLeiding.TabIndex = 65;
-            this.lstLeiding.SelectedIndexChanged += new System.EventHandler(this.lstLeiding_SelectedIndexChanged);
             // 
             // txtNaam
             // 
@@ -250,11 +245,55 @@
             this.btnLeiding.TabIndex = 88;
             this.btnLeiding.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lvLeiding
+            // 
+            this.lvLeiding.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chNaam,
+            this.chAchternaam,
+            this.chGroep,
+            this.chStartLeiding,
+            this.chHoofdLeiding});
+            this.lvLeiding.FullRowSelect = true;
+            this.lvLeiding.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvLeiding.Location = new System.Drawing.Point(12, 12);
+            this.lvLeiding.MultiSelect = false;
+            this.lvLeiding.Name = "lvLeiding";
+            this.lvLeiding.Size = new System.Drawing.Size(684, 259);
+            this.lvLeiding.TabIndex = 89;
+            this.lvLeiding.UseCompatibleStateImageBehavior = false;
+            this.lvLeiding.View = System.Windows.Forms.View.Details;
+            // 
+            // chNaam
+            // 
+            this.chNaam.Text = "Naam";
+            this.chNaam.Width = 80;
+            // 
+            // chAchternaam
+            // 
+            this.chAchternaam.Text = "Achternaam";
+            this.chAchternaam.Width = 80;
+            // 
+            // chGroep
+            // 
+            this.chGroep.Text = "Groep";
+            this.chGroep.Width = 80;
+            // 
+            // chStartLeiding
+            // 
+            this.chStartLeiding.Text = "Start Leiding";
+            this.chStartLeiding.Width = 100;
+            // 
+            // chHoofdLeiding
+            // 
+            this.chHoofdLeiding.Text = "Hoofdleiding";
+            this.chHoofdLeiding.Width = 80;
+            // 
             // LEIDING
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 487);
+            this.Controls.Add(this.lvLeiding);
             this.Controls.Add(this.btnLeiding);
             this.Controls.Add(this.btnAk);
             this.Controls.Add(this.txtTak);
@@ -267,7 +306,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lstLeiding);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LEIDING";
             this.Text = "LEIDING";
@@ -283,7 +321,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lstLeiding;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtNaam;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtAchternaam;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtHoofdLeiding;
@@ -291,5 +328,11 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTak;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAk;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLeiding;
+        private System.Windows.Forms.ListView lvLeiding;
+        private System.Windows.Forms.ColumnHeader chNaam;
+        private System.Windows.Forms.ColumnHeader chAchternaam;
+        private System.Windows.Forms.ColumnHeader chGroep;
+        private System.Windows.Forms.ColumnHeader chStartLeiding;
+        private System.Windows.Forms.ColumnHeader chHoofdLeiding;
     }
 }

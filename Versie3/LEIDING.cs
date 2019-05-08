@@ -28,11 +28,18 @@ namespace Versie3
         {
             bus = new Business();
 
-            lstLeiding.Items.Clear();
+            lvLeiding.Items.Clear();
 
-            foreach (string lijn in bus.getLeiding())
+            foreach (LeidingK l in bus.getLeiding())
             {
-                lstLeiding.Items.Add(lijn);
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = l.naam;
+                lvi.SubItems.Add(l.achternaam);
+                lvi.SubItems.Add(l.tak);
+                lvi.SubItems.Add(l.start);
+                lvi.SubItems.Add(l.hoofd);
+                lvi.Tag = l; //om l hieruit te halen typ: LeidingK k = (LeidingK)lvi.Tag;
+                lvLeiding.Items.Add(lvi);
             }
         }
 
