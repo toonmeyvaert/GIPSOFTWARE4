@@ -28,14 +28,19 @@ namespace Versie3
         {
             bus = new Business();
 
-            lstAankoop.Items.Clear();
+            lvAankoop.Items.Clear();
 
-            foreach (string lijn in bus.getAankopen())
+            foreach (AankoopK l in bus.getAankopen())
             {
-                lstAankoop.Items.Add(lijn);
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = l.voorwerp;
+                lvi.SubItems.Add(l.aantal.ToString());
+                lvi.SubItems.Add(l.prijs.ToString());
+                lvi.Tag = l;
+                lvAankoop.Items.Add(lvi);
             }
         }
-
+        
         private void btnVoegToe_Click(object sender, EventArgs e)
         {
             
@@ -53,6 +58,11 @@ namespace Versie3
         }
 
         private void txtVoorwerpa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvAankoop_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

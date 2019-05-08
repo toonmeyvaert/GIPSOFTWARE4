@@ -26,13 +26,21 @@ namespace Versie3
         {
             bus = new Business();
 
-            lstLid.Items.Clear();
+            lvLeden.Items.Clear();
 
-            foreach (string lijn in bus.getLeden())
+            foreach (LidK l in bus.getLeden())
             {
-                lstLid.Items.Add(lijn);
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = l.naam;
+                lvi.SubItems.Add(l.geboorte);
+                lvi.SubItems.Add(l.medisch);
+                lvi.SubItems.Add(l.adres);
+                lvi.SubItems.Add(l.email);
+                lvi.SubItems.Add(l.tak);
+                lvi.SubItems.Add(l.achternaam);
+                lvi.Tag = l;
+                lvLeden.Items.Add(lvi);
             }
-
         }
 
         private void btnAk_Click(object sender, EventArgs e)
@@ -118,6 +126,11 @@ namespace Versie3
         }
 
         private void cmbTak_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvLeden_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

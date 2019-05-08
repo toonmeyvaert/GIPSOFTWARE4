@@ -34,11 +34,16 @@ namespace Versie3
         {
             bus = new Business();
 
-            lstMateriaal.Items.Clear();
+            lvMateriaal.Items.Clear();
 
-            foreach (string lijn in bus.getMaterialen())
+            foreach (MateriaalK l in bus.getMaterialen())
             {
-                lstMateriaal.Items.Add(lijn);
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = l.naam;
+                lvi.SubItems.Add(l.aantal.ToString());
+                lvi.SubItems.Add(l.beschikbaarheid);
+                lvi.Tag = l;
+                lvMateriaal.Items.Add(lvi);
             }
         }
 
@@ -50,7 +55,7 @@ namespace Versie3
 
         private void MATERIAAL_Load(object sender, EventArgs e)
         {
-
+            vulForm();
         }
 
         private void btnToevoegen_Click_1(object sender, EventArgs e)
@@ -68,6 +73,11 @@ namespace Versie3
         {
             bus.voegToe(txtNaam.Text, Convert.ToInt32(txtAantal.Text), txtBeschikbaarheid.Text);
             vulForm();
+        }
+
+        private void lvMateriaal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

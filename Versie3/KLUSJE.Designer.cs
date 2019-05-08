@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KLUSJE));
             this.label1 = new System.Windows.Forms.Label();
-            this.lstKlusje = new System.Windows.Forms.ListBox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lvKlusje = new System.Windows.Forms.ListView();
+            this.chSoortenKlusje = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chVerantwoordelijke = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chPlanning = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -40,21 +43,10 @@
             this.label1.Location = new System.Drawing.Point(16, 108);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 16);
+            this.label1.Size = new System.Drawing.Size(139, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Beschikbare Klusjes:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lstKlusje
-            // 
-            this.lstKlusje.FormattingEnabled = true;
-            this.lstKlusje.ItemHeight = 16;
-            this.lstKlusje.Location = new System.Drawing.Point(160, 80);
-            this.lstKlusje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lstKlusje.Name = "lstKlusje";
-            this.lstKlusje.Size = new System.Drawing.Size(548, 196);
-            this.lstKlusje.TabIndex = 1;
-            this.lstKlusje.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // bunifuThinButton21
             // 
@@ -82,15 +74,46 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // lvKlusje
+            // 
+            this.lvKlusje.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chSoortenKlusje,
+            this.chVerantwoordelijke,
+            this.chPlanning});
+            this.lvKlusje.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvKlusje.Location = new System.Drawing.Point(162, 44);
+            this.lvKlusje.MultiSelect = false;
+            this.lvKlusje.Name = "lvKlusje";
+            this.lvKlusje.Size = new System.Drawing.Size(545, 261);
+            this.lvKlusje.TabIndex = 3;
+            this.lvKlusje.UseCompatibleStateImageBehavior = false;
+            this.lvKlusje.View = System.Windows.Forms.View.Details;
+            this.lvKlusje.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // chSoortenKlusje
+            // 
+            this.chSoortenKlusje.Text = "SoortenKlusje";
+            this.chSoortenKlusje.Width = 80;
+            // 
+            // chVerantwoordelijke
+            // 
+            this.chVerantwoordelijke.Text = "Verantwoordelijke";
+            this.chVerantwoordelijke.Width = 110;
+            // 
+            // chPlanning
+            // 
+            this.chPlanning.Text = "Planning";
+            this.chPlanning.Width = 80;
+            // 
             // KLUSJE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 411);
+            this.Controls.Add(this.lvKlusje);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.lstKlusje);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KLUSJE";
             this.Text = "KLUSJE";
             this.Load += new System.EventHandler(this.KLUSJE_Load);
@@ -102,7 +125,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lstKlusje;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.ListView lvKlusje;
+        private System.Windows.Forms.ColumnHeader chSoortenKlusje;
+        private System.Windows.Forms.ColumnHeader chVerantwoordelijke;
+        private System.Windows.Forms.ColumnHeader chPlanning;
     }
 }

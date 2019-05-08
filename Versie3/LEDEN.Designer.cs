@@ -44,8 +44,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lstLid = new System.Windows.Forms.ListBox();
             this.cmbTak = new Bunifu.Framework.UI.BunifuDropdown();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvLeden = new System.Windows.Forms.ListView();
+            this.chNaam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chGeboortejaar = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chMedischefiche = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAdres = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chEmailOuder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chTak = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAchternaam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // txtMed
@@ -58,10 +66,10 @@
             this.txtMed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMed.isPassword = false;
-            this.txtMed.Location = new System.Drawing.Point(364, 318);
-            this.txtMed.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMed.Location = new System.Drawing.Point(485, 391);
+            this.txtMed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtMed.Name = "txtMed";
-            this.txtMed.Size = new System.Drawing.Size(136, 24);
+            this.txtMed.Size = new System.Drawing.Size(181, 36);
             this.txtMed.TabIndex = 90;
             this.txtMed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMed.Visible = false;
@@ -77,10 +85,10 @@
             this.txtGeboorte.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtGeboorte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtGeboorte.isPassword = false;
-            this.txtGeboorte.Location = new System.Drawing.Point(364, 275);
-            this.txtGeboorte.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGeboorte.Location = new System.Drawing.Point(485, 338);
+            this.txtGeboorte.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtGeboorte.Name = "txtGeboorte";
-            this.txtGeboorte.Size = new System.Drawing.Size(136, 24);
+            this.txtGeboorte.Size = new System.Drawing.Size(181, 36);
             this.txtGeboorte.TabIndex = 89;
             this.txtGeboorte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtGeboorte.Visible = false;
@@ -95,10 +103,10 @@
             this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNaam.isPassword = false;
-            this.txtNaam.Location = new System.Drawing.Point(203, 274);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNaam.Location = new System.Drawing.Point(271, 337);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtNaam.Name = "txtNaam";
-            this.txtNaam.Size = new System.Drawing.Size(136, 24);
+            this.txtNaam.Size = new System.Drawing.Size(181, 36);
             this.txtNaam.TabIndex = 88;
             this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNaam.Visible = false;
@@ -113,10 +121,10 @@
             this.txtAchternaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAchternaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAchternaam.isPassword = false;
-            this.txtAchternaam.Location = new System.Drawing.Point(203, 320);
-            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAchternaam.Location = new System.Drawing.Point(271, 394);
+            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAchternaam.Name = "txtAchternaam";
-            this.txtAchternaam.Size = new System.Drawing.Size(136, 24);
+            this.txtAchternaam.Size = new System.Drawing.Size(181, 36);
             this.txtAchternaam.TabIndex = 87;
             this.txtAchternaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtAchternaam.Visible = false;
@@ -131,10 +139,10 @@
             this.txtadres.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtadres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtadres.isPassword = false;
-            this.txtadres.Location = new System.Drawing.Point(203, 364);
-            this.txtadres.Margin = new System.Windows.Forms.Padding(4);
+            this.txtadres.Location = new System.Drawing.Point(271, 448);
+            this.txtadres.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtadres.Name = "txtadres";
-            this.txtadres.Size = new System.Drawing.Size(136, 24);
+            this.txtadres.Size = new System.Drawing.Size(181, 36);
             this.txtadres.TabIndex = 86;
             this.txtadres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtadres.Visible = false;
@@ -149,10 +157,10 @@
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.isPassword = false;
-            this.txtEmail.Location = new System.Drawing.Point(203, 410);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(271, 505);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(136, 24);
+            this.txtEmail.Size = new System.Drawing.Size(181, 36);
             this.txtEmail.TabIndex = 85;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtEmail.Visible = false;
@@ -175,10 +183,10 @@
             this.btnAk.IdleFillColor = System.Drawing.Color.White;
             this.btnAk.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnAk.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAk.Location = new System.Drawing.Point(364, 393);
-            this.btnAk.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAk.Location = new System.Drawing.Point(485, 484);
+            this.btnAk.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnAk.Name = "btnAk";
-            this.btnAk.Size = new System.Drawing.Size(121, 41);
+            this.btnAk.Size = new System.Drawing.Size(161, 50);
             this.btnAk.TabIndex = 84;
             this.btnAk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAk.Visible = false;
@@ -202,10 +210,10 @@
             this.btnLid.IdleFillColor = System.Drawing.Color.White;
             this.btnLid.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnLid.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLid.Location = new System.Drawing.Point(13, 298);
-            this.btnLid.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLid.Location = new System.Drawing.Point(17, 367);
+            this.btnLid.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnLid.Name = "btnLid";
-            this.btnLid.Size = new System.Drawing.Size(181, 41);
+            this.btnLid.Size = new System.Drawing.Size(241, 50);
             this.btnLid.TabIndex = 83;
             this.btnLid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLid.Click += new System.EventHandler(this.btnLid_Click_1);
@@ -213,10 +221,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(362, 346);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(483, 426);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.Size = new System.Drawing.Size(80, 17);
             this.label7.TabIndex = 81;
             this.label7.Text = "Tak/Groep:";
             this.label7.Visible = false;
@@ -224,10 +231,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(201, 393);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(268, 484);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 80;
             this.label5.Text = "Email:";
             this.label5.Visible = false;
@@ -235,10 +241,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(201, 347);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(268, 427);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.Size = new System.Drawing.Size(49, 17);
             this.label6.TabIndex = 79;
             this.label6.Text = "Adres:";
             this.label6.Visible = false;
@@ -246,10 +251,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(362, 303);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(483, 373);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.Size = new System.Drawing.Size(102, 17);
             this.label4.TabIndex = 78;
             this.label4.Text = "MedischeFiche";
             this.label4.Visible = false;
@@ -257,10 +261,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(362, 257);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(483, 316);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(96, 17);
             this.label3.TabIndex = 77;
             this.label3.Text = "Geboortejaar:";
             this.label3.Visible = false;
@@ -268,10 +271,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 303);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(268, 373);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 76;
             this.label2.Text = "Achternaam:";
             this.label2.Visible = false;
@@ -279,22 +281,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 257);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(268, 316);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 75;
             this.label1.Text = "Naam:";
             this.label1.Visible = false;
-            // 
-            // lstLid
-            // 
-            this.lstLid.FormattingEnabled = true;
-            this.lstLid.Location = new System.Drawing.Point(36, 18);
-            this.lstLid.Margin = new System.Windows.Forms.Padding(2);
-            this.lstLid.Name = "lstLid";
-            this.lstLid.Size = new System.Drawing.Size(549, 238);
-            this.lstLid.TabIndex = 74;
             // 
             // cmbTak
             // 
@@ -309,21 +301,84 @@
         "Jong verkenners",
         "Verkenners",
         "Jin"};
-            this.cmbTak.Location = new System.Drawing.Point(364, 362);
+            this.cmbTak.Location = new System.Drawing.Point(485, 446);
+            this.cmbTak.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cmbTak.Name = "cmbTak";
             this.cmbTak.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.cmbTak.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.cmbTak.selectedIndex = -1;
-            this.cmbTak.Size = new System.Drawing.Size(136, 23);
+            this.cmbTak.Size = new System.Drawing.Size(181, 28);
             this.cmbTak.TabIndex = 91;
             this.cmbTak.Visible = false;
             this.cmbTak.onItemSelected += new System.EventHandler(this.cmbTak_onItemSelected);
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(493, 454);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 92;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // lvLeden
+            // 
+            this.lvLeden.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chNaam,
+            this.chGeboortejaar,
+            this.chMedischefiche,
+            this.chAdres,
+            this.chEmailOuder,
+            this.chTak,
+            this.chAchternaam});
+            this.lvLeden.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvLeden.Location = new System.Drawing.Point(12, 12);
+            this.lvLeden.MultiSelect = false;
+            this.lvLeden.Name = "lvLeden";
+            this.lvLeden.Size = new System.Drawing.Size(749, 301);
+            this.lvLeden.TabIndex = 93;
+            this.lvLeden.UseCompatibleStateImageBehavior = false;
+            this.lvLeden.View = System.Windows.Forms.View.Details;
+            this.lvLeden.SelectedIndexChanged += new System.EventHandler(this.lvLeden_SelectedIndexChanged);
+            // 
+            // chNaam
+            // 
+            this.chNaam.Text = "Naam";
+            // 
+            // chGeboortejaar
+            // 
+            this.chGeboortejaar.Text = "Geboortejaar";
+            this.chGeboortejaar.Width = 80;
+            // 
+            // chMedischefiche
+            // 
+            this.chMedischefiche.Text = "Medischefiche";
+            this.chMedischefiche.Width = 90;
+            // 
+            // chAdres
+            // 
+            this.chAdres.Text = "Adres";
+            // 
+            // chEmailOuder
+            // 
+            this.chEmailOuder.Text = "EmailOuder";
+            this.chEmailOuder.Width = 80;
+            // 
+            // chTak
+            // 
+            this.chTak.Text = "Tak";
+            // 
+            // chAchternaam
+            // 
+            this.chAchternaam.Text = "Achternaam";
+            this.chAchternaam.Width = 80;
+            // 
             // LEDEN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 453);
+            this.ClientSize = new System.Drawing.Size(799, 558);
+            this.Controls.Add(this.lvLeden);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.cmbTak);
             this.Controls.Add(this.txtMed);
             this.Controls.Add(this.txtGeboorte);
@@ -340,7 +395,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lstLid);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LEDEN";
             this.Text = "LEDEN";
             this.Load += new System.EventHandler(this.LEDEN_Load);
@@ -366,7 +421,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lstLid;
         private Bunifu.Framework.UI.BunifuDropdown cmbTak;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvLeden;
+        private System.Windows.Forms.ColumnHeader chNaam;
+        private System.Windows.Forms.ColumnHeader chGeboortejaar;
+        private System.Windows.Forms.ColumnHeader chMedischefiche;
+        private System.Windows.Forms.ColumnHeader chAdres;
+        private System.Windows.Forms.ColumnHeader chEmailOuder;
+        private System.Windows.Forms.ColumnHeader chTak;
+        private System.Windows.Forms.ColumnHeader chAchternaam;
     }
 }

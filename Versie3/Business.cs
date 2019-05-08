@@ -27,14 +27,10 @@ namespace Versie3
             klusjes = pers.GetKlusjesFromDB();
         }
         //leden
-        public List<string> getLeden()
+        public List<LidK> getLeden()
         {
-            List<string> result = new List<string>();
-            foreach (LidK item in LidKs)
-            {
-                result.Add(item.ToString());
-            }
-            return result;
+            List<LidK> result = new List<LidK>();
+            return LidKs;
         }
         public void voegToe(string pstrnaam, string pstrgeboorte, string pstrmedisch, string pstradres, string pstrmail, string pstrtak, string pstrachternaam)
         {
@@ -49,15 +45,10 @@ namespace Versie3
             get { return _aankopen; }
             set { _aankopen = value; }
         }        
-        public List<string> getAankopen()
+        public List<AankoopK> getAankopen()
         {
-            List<string> result = new List<string>();
-
-            foreach (AankoopK item in aankopen)
-            {
-                result.Add(item.ToString());
-            }
-            return result;
+            List<AankoopK> result = new List<AankoopK>();
+            return aankopen;
         }
         public void voegToe(double pPrijs, int pAantal, string pVoorwerp)
         {
@@ -74,7 +65,6 @@ namespace Versie3
         public List<LeidingK> getLeiding()
         {
             List<LeidingK> result = new List<LeidingK>();
-
             return Leidingks;
         }
         public void voegToe(string pnaam, string pachternaam, string ptak, string pstart, string phoofd)
@@ -90,15 +80,10 @@ namespace Versie3
             get { return _materialen; }
             set { _materialen = value; }
         }
-        public List<string> getMaterialen()
+        public List<MateriaalK> getMaterialen()
         {
-            List<string> result = new List<string>();
-
-            foreach (MateriaalK item in materialen)
-            {
-                result.Add(item.ToString());
-            }
-            return result;
+            List<MateriaalK> result = new List<MateriaalK>();
+            return materialen;
         }
         public void voegToe(string pNaam, int pAantal, string pBeschikbaarheid)
         {
@@ -112,15 +97,10 @@ namespace Versie3
             get { return _klusjes; }
             set { _klusjes = value; }
         }
-        public List<string> getKlusjes()
+        public List<KlusjeK> getKlusjes()
         {
-            List<string> result = new List<string>();
-
-            foreach (KlusjeK item in klusjes)
-            {
-                result.Add(item.ToString());
-            }
-            return result;
+            List<KlusjeK> result = new List<KlusjeK>();
+            return klusjes;
         }
         public void voegToe(string pSoort, string pverantwoordelijke, string pPlanning)
         {

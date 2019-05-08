@@ -33,12 +33,17 @@ namespace Versie3
         {
             bus = new Business();
 
-            lstKlusje.Items.Clear();
+            lvKlusje.Items.Clear();
 
-            foreach (string lijn in bus.getKlusjes())
+            foreach (KlusjeK l in bus.getKlusjes())
             {
-                lstKlusje.Items.Add(lijn);
-            }
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = l.soort;
+                lvi.SubItems.Add(l.verantwoordelijke);
+                lvi.SubItems.Add(l.planning);
+                lvi.Tag = l;
+                lvKlusje.Items.Add(lvi);
+            }    
         }
 
 
@@ -48,6 +53,11 @@ namespace Versie3
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
