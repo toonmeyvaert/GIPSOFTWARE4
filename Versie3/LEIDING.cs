@@ -68,6 +68,14 @@ namespace Versie3
         {
             bus.voegToe(txtNaam.Text, txtAchternaam.Text, txtTak.Text, txtStart.Text, txtHoofdLeiding.Text);
             vulForm();
+
+            txtNaam.Text = "";
+            txtAchternaam.Text = "";
+            txtTak.Text = "";
+            txtStart.Text = "";
+            txtHoofdLeiding.Text = "";
+
+
         }
 
         private void lstLeiding_SelectedIndexChanged(object sender, EventArgs e)

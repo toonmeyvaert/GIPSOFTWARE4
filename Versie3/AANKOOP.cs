@@ -55,6 +55,13 @@ namespace Versie3
         {
             bus.voegToe(Convert.ToDouble(txtPrijs.Text), Convert.ToInt32(txtAantal.Text), Convert.ToString(txtVoorwerp.Text));
             vulForm();
+
+            txtPrijs.Text = "";
+            txtAantal.Text = "";
+            txtVoorwerp.Text = "";
+
+
+
         }
 
         private void txtVoorwerpa_TextChanged(object sender, EventArgs e)

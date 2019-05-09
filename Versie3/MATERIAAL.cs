@@ -73,6 +73,11 @@ namespace Versie3
         {
             bus.voegToe(txtNaam.Text, txtAantal.Text, txtBeschikbaarheid.Text);
             vulForm();
+
+            txtAantal.Text = "";
+            txtNaam.Text = "";
+            txtBeschikbaarheid.Text = "";
+
         }
 
         private void lvMateriaal_SelectedIndexChanged(object sender, EventArgs e)

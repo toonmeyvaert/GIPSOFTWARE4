@@ -116,7 +116,7 @@
             this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNaam.isPassword = false;
             this.txtNaam.Location = new System.Drawing.Point(248, 291);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4);
             this.txtNaam.Name = "txtNaam";
             this.txtNaam.Size = new System.Drawing.Size(136, 29);
             this.txtNaam.TabIndex = 82;
@@ -134,7 +134,7 @@
             this.txtAchternaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAchternaam.isPassword = false;
             this.txtAchternaam.Location = new System.Drawing.Point(248, 336);
-            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAchternaam.Margin = new System.Windows.Forms.Padding(4);
             this.txtAchternaam.Name = "txtAchternaam";
             this.txtAchternaam.Size = new System.Drawing.Size(136, 29);
             this.txtAchternaam.TabIndex = 83;
@@ -152,7 +152,7 @@
             this.txtHoofdLeiding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtHoofdLeiding.isPassword = false;
             this.txtHoofdLeiding.Location = new System.Drawing.Point(248, 381);
-            this.txtHoofdLeiding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoofdLeiding.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoofdLeiding.Name = "txtHoofdLeiding";
             this.txtHoofdLeiding.Size = new System.Drawing.Size(136, 29);
             this.txtHoofdLeiding.TabIndex = 84;
@@ -170,7 +170,7 @@
             this.txtStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtStart.isPassword = false;
             this.txtStart.Location = new System.Drawing.Point(409, 291);
-            this.txtStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtStart.Name = "txtStart";
             this.txtStart.Size = new System.Drawing.Size(136, 29);
             this.txtStart.TabIndex = 85;
@@ -188,7 +188,7 @@
             this.txtTak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTak.isPassword = false;
             this.txtTak.Location = new System.Drawing.Point(409, 340);
-            this.txtTak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTak.Margin = new System.Windows.Forms.Padding(4);
             this.txtTak.Name = "txtTak";
             this.txtTak.Size = new System.Drawing.Size(136, 29);
             this.txtTak.TabIndex = 86;
@@ -205,7 +205,7 @@
             this.btnAk.BackColor = System.Drawing.SystemColors.Control;
             this.btnAk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAk.BackgroundImage")));
             this.btnAk.ButtonText = "Toevoegen";
-            this.btnAk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAk.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnAk.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAk.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnAk.IdleBorderThickness = 1;
@@ -214,11 +214,13 @@
             this.btnAk.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnAk.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnAk.Location = new System.Drawing.Point(409, 373);
-            this.btnAk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAk.Margin = new System.Windows.Forms.Padding(5);
             this.btnAk.Name = "btnAk";
             this.btnAk.Size = new System.Drawing.Size(121, 41);
             this.btnAk.TabIndex = 87;
             this.btnAk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAk.UseWaitCursor = true;
+            this.btnAk.Visible = false;
             // 
             // btnLeiding
             // 
@@ -239,7 +241,7 @@
             this.btnLeiding.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnLeiding.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnLeiding.Location = new System.Drawing.Point(93, 291);
-            this.btnLeiding.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLeiding.Margin = new System.Windows.Forms.Padding(5);
             this.btnLeiding.Name = "btnLeiding";
             this.btnLeiding.Size = new System.Drawing.Size(121, 58);
             this.btnLeiding.TabIndex = 88;
@@ -308,7 +310,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LEIDING";
             this.Text = "LEIDING";
             this.Load += new System.EventHandler(this.LEIDING_Load);

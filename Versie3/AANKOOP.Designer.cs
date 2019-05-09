@@ -88,7 +88,6 @@
             this.txtVoorwerp.Size = new System.Drawing.Size(98, 24);
             this.txtVoorwerp.TabIndex = 75;
             this.txtVoorwerp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVoorwerp.Visible = false;
             // 
             // txtAantal
             // 
@@ -106,7 +105,6 @@
             this.txtAantal.Size = new System.Drawing.Size(98, 24);
             this.txtAantal.TabIndex = 76;
             this.txtAantal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAantal.Visible = false;
             // 
             // txtPrijs
             // 
@@ -124,7 +122,6 @@
             this.txtPrijs.Size = new System.Drawing.Size(98, 24);
             this.txtPrijs.TabIndex = 77;
             this.txtPrijs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPrijs.Visible = false;
             // 
             // btnVoegToe
             // 

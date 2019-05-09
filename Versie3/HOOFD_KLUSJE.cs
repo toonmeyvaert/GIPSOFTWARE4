@@ -26,6 +26,11 @@ namespace Versie3
         {
             bus.voegToe(txtKlusje.Text, txtVerantwoordelijke.Text, txtPlanning.Text);
             vulForm();
+
+            txtKlusje.Text = "";
+            txtVerantwoordelijke.Text = "";
+            txtPlanning.Text = "";
+
         }
 
         private void HOOFD_KLUSJE_Load(object sender, EventArgs e)

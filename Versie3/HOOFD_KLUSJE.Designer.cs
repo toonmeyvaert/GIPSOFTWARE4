@@ -72,7 +72,7 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(14, 177);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 5;
@@ -86,7 +86,7 @@
             this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Klusje aanpassen";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -98,7 +98,7 @@
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.Location = new System.Drawing.Point(411, 177);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton22.TabIndex = 6;
@@ -146,7 +146,7 @@
             this.txtKlusje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtKlusje.isPassword = false;
             this.txtKlusje.Location = new System.Drawing.Point(262, 241);
-            this.txtKlusje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKlusje.Margin = new System.Windows.Forms.Padding(4);
             this.txtKlusje.Name = "txtKlusje";
             this.txtKlusje.Size = new System.Drawing.Size(136, 24);
             this.txtKlusje.TabIndex = 72;
@@ -163,7 +163,7 @@
             this.txtPlanning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPlanning.isPassword = false;
             this.txtPlanning.Location = new System.Drawing.Point(262, 307);
-            this.txtPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlanning.Name = "txtPlanning";
             this.txtPlanning.Size = new System.Drawing.Size(136, 24);
             this.txtPlanning.TabIndex = 73;
@@ -180,7 +180,7 @@
             this.txtVerantwoordelijke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtVerantwoordelijke.isPassword = false;
             this.txtVerantwoordelijke.Location = new System.Drawing.Point(262, 274);
-            this.txtVerantwoordelijke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVerantwoordelijke.Margin = new System.Windows.Forms.Padding(4);
             this.txtVerantwoordelijke.Name = "txtVerantwoordelijke";
             this.txtVerantwoordelijke.Size = new System.Drawing.Size(136, 24);
             this.txtVerantwoordelijke.TabIndex = 74;
@@ -194,7 +194,7 @@
             this.chPlanning});
             this.lvK.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvK.Location = new System.Drawing.Point(62, 28);
-            this.lvK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvK.Margin = new System.Windows.Forms.Padding(2);
             this.lvK.MultiSelect = false;
             this.lvK.Name = "lvK";
             this.lvK.Size = new System.Drawing.Size(498, 97);
@@ -222,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(615, 442);
             this.Controls.Add(this.lvK);
             this.Controls.Add(this.txtVerantwoordelijke);
