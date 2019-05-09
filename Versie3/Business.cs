@@ -85,7 +85,7 @@ namespace Versie3
             List<MateriaalK> result = new List<MateriaalK>();
             return materialen;
         }
-        public void voegToe(string pNaam, int pAantal, string pBeschikbaarheid)
+        public void voegMateriaalToe(string pNaam, int pAantal, string pBeschikbaarheid)
         {
             MateriaalK m = new MateriaalK(pNaam, pAantal, pBeschikbaarheid);
             pers.addMateriaal(m);
@@ -100,7 +100,12 @@ namespace Versie3
         public List<KlusjeK> getKlusjes()
         {
             List<KlusjeK> result = new List<KlusjeK>();
+            result = pers.GetKlusjesFromDB();
             return klusjes;
+        }
+        public void deleteKlusje(string soort, string verantwoordelijke, string planning)
+        {
+            pers.deleteKlusje(soort, verantwoordelijke, planning);
         }
         public void voegToe(string pSoort, string pverantwoordelijke, string pPlanning)
         {

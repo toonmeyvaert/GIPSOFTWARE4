@@ -66,11 +66,12 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(189, 255);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Visible = false;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // lvKlusje
@@ -81,7 +82,7 @@
             this.chPlanning});
             this.lvKlusje.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvKlusje.Location = new System.Drawing.Point(122, 36);
-            this.lvKlusje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvKlusje.Margin = new System.Windows.Forms.Padding(2);
             this.lvKlusje.MultiSelect = false;
             this.lvKlusje.Name = "lvKlusje";
             this.lvKlusje.Size = new System.Drawing.Size(410, 213);
