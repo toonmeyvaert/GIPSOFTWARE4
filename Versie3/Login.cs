@@ -20,7 +20,7 @@ namespace Versie3
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (b.tryLogIn(txtNaam.Text, txtWachtwoord.Text))
+            if (b.tryLogIn( txtNaam.Text, txtWachtwoord.Text))
             {
 
                 accLeiding acc = b.logIn(txtNaam.Text);
@@ -39,6 +39,11 @@ namespace Versie3
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtNaam_OnValueChanged(object sender, EventArgs e)
         {
 
         }
