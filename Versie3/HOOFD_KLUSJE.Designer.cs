@@ -47,10 +47,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(259, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 17);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Klusjes Leiding";
             // 
@@ -72,10 +71,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(19, 218);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(14, 177);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(241, 50);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 5;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -98,10 +97,10 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(548, 218);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(411, 177);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(241, 50);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton22.TabIndex = 6;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -110,10 +109,9 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(227, 310);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(170, 252);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(50, 17);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(38, 13);
             this.bunifuCustomLabel1.TabIndex = 11;
             this.bunifuCustomLabel1.Text = "Klusje:";
             // 
@@ -121,10 +119,9 @@
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(225, 351);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(169, 285);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(124, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(94, 13);
             this.bunifuCustomLabel2.TabIndex = 12;
             this.bunifuCustomLabel2.Text = "Verantwoordelijke:";
             // 
@@ -132,10 +129,9 @@
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(227, 391);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(170, 318);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(67, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(51, 13);
             this.bunifuCustomLabel3.TabIndex = 14;
             this.bunifuCustomLabel3.Text = "Planning:";
             // 
@@ -149,13 +145,12 @@
             this.txtKlusje.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtKlusje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtKlusje.isPassword = false;
-            this.txtKlusje.Location = new System.Drawing.Point(349, 297);
-            this.txtKlusje.Margin = new System.Windows.Forms.Padding(5);
+            this.txtKlusje.Location = new System.Drawing.Point(262, 241);
+            this.txtKlusje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKlusje.Name = "txtKlusje";
-            this.txtKlusje.Size = new System.Drawing.Size(181, 30);
+            this.txtKlusje.Size = new System.Drawing.Size(136, 24);
             this.txtKlusje.TabIndex = 72;
             this.txtKlusje.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtKlusje.Visible = false;
             // 
             // txtPlanning
             // 
@@ -167,13 +162,12 @@
             this.txtPlanning.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPlanning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPlanning.isPassword = false;
-            this.txtPlanning.Location = new System.Drawing.Point(349, 378);
-            this.txtPlanning.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPlanning.Location = new System.Drawing.Point(262, 307);
+            this.txtPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPlanning.Name = "txtPlanning";
-            this.txtPlanning.Size = new System.Drawing.Size(181, 30);
+            this.txtPlanning.Size = new System.Drawing.Size(136, 24);
             this.txtPlanning.TabIndex = 73;
             this.txtPlanning.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPlanning.Visible = false;
             // 
             // txtVerantwoordelijke
             // 
@@ -185,13 +179,12 @@
             this.txtVerantwoordelijke.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtVerantwoordelijke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtVerantwoordelijke.isPassword = false;
-            this.txtVerantwoordelijke.Location = new System.Drawing.Point(349, 337);
-            this.txtVerantwoordelijke.Margin = new System.Windows.Forms.Padding(5);
+            this.txtVerantwoordelijke.Location = new System.Drawing.Point(262, 274);
+            this.txtVerantwoordelijke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtVerantwoordelijke.Name = "txtVerantwoordelijke";
-            this.txtVerantwoordelijke.Size = new System.Drawing.Size(181, 30);
+            this.txtVerantwoordelijke.Size = new System.Drawing.Size(136, 24);
             this.txtVerantwoordelijke.TabIndex = 74;
             this.txtVerantwoordelijke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVerantwoordelijke.Visible = false;
             // 
             // lvK
             // 
@@ -200,10 +193,11 @@
             this.chVerantwoordelijke,
             this.chPlanning});
             this.lvK.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvK.Location = new System.Drawing.Point(83, 35);
+            this.lvK.Location = new System.Drawing.Point(62, 28);
+            this.lvK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvK.MultiSelect = false;
             this.lvK.Name = "lvK";
-            this.lvK.Size = new System.Drawing.Size(663, 119);
+            this.lvK.Size = new System.Drawing.Size(498, 97);
             this.lvK.TabIndex = 75;
             this.lvK.UseCompatibleStateImageBehavior = false;
             this.lvK.View = System.Windows.Forms.View.Details;
@@ -226,9 +220,9 @@
             // 
             // HOOFD_KLUSJE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 544);
+            this.ClientSize = new System.Drawing.Size(615, 442);
             this.Controls.Add(this.lvK);
             this.Controls.Add(this.txtVerantwoordelijke);
             this.Controls.Add(this.txtPlanning);
@@ -239,7 +233,7 @@
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HOOFD_KLUSJE";
             this.Text = "HOOFD_KLUSJE";
             this.Load += new System.EventHandler(this.HOOFD_KLUSJE_Load);

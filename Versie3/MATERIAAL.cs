@@ -71,11 +71,16 @@ namespace Versie3
 
         private void btnToev_Click_1(object sender, EventArgs e)
         {
-            bus.voegToe(txtNaam.Text, Convert.ToInt32(txtAantal.Text), txtBeschikbaarheid.Text);
+            bus.voegToe(txtNaam.Text, txtAantal.Text, txtBeschikbaarheid.Text);
             vulForm();
         }
 
         private void lvMateriaal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReserveren_Click(object sender, EventArgs e)
         {
 
         }

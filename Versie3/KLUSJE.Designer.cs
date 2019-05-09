@@ -40,10 +40,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 17);
+            this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Beschikbare Klusjes:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -66,10 +65,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(252, 314);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(189, 255);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(241, 50);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -81,10 +80,11 @@
             this.chVerantwoordelijke,
             this.chPlanning});
             this.lvKlusje.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvKlusje.Location = new System.Drawing.Point(162, 44);
+            this.lvKlusje.Location = new System.Drawing.Point(122, 36);
+            this.lvKlusje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvKlusje.MultiSelect = false;
             this.lvKlusje.Name = "lvKlusje";
-            this.lvKlusje.Size = new System.Drawing.Size(545, 261);
+            this.lvKlusje.Size = new System.Drawing.Size(410, 213);
             this.lvKlusje.TabIndex = 3;
             this.lvKlusje.UseCompatibleStateImageBehavior = false;
             this.lvKlusje.View = System.Windows.Forms.View.Details;
@@ -107,13 +107,13 @@
             // 
             // KLUSJE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 411);
+            this.ClientSize = new System.Drawing.Size(575, 334);
             this.Controls.Add(this.lvKlusje);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KLUSJE";
             this.Text = "KLUSJE";
             this.Load += new System.EventHandler(this.KLUSJE_Load);

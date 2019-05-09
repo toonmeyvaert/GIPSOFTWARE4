@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENU));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuLid = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuLeiding = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuAankoop = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuMateriaal = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuKlusje = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -48,8 +51,8 @@
             this.MenuKlusje});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(488, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(366, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,19 +91,31 @@
             this.MenuKlusje.Text = "Klusje";
             this.MenuKlusje.Click += new System.EventHandler(this.MenuKlusje_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Versie3.Properties.Resources.pixel_speech_bubble;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 101);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(213, 298);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // MENU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 438);
+            this.ClientSize = new System.Drawing.Size(366, 356);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MENU";
             this.Text = "Zolak";
             this.Load += new System.EventHandler(this.MENU_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +129,7 @@
         private System.Windows.Forms.ToolStripMenuItem MenuAankoop;
         private System.Windows.Forms.ToolStripMenuItem MenuMateriaal;
         private System.Windows.Forms.ToolStripMenuItem MenuKlusje;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

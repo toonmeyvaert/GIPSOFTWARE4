@@ -71,8 +71,22 @@ namespace Versie3
 
         private void btnAk_Click_1(object sender, EventArgs e)
         {
+
+
+
             bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtadres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
             vulForm();
+
+            txtNaam.Text = "";
+            txtGeboorte.Text = "";
+            txtMed.Text = "";
+            txtadres.Text = "";
+            txtEmail.Text = "";
+            cmbTak.Text = "";
+            txtAchternaam.Text = "";
+
+
+
         }
 
         private void txtAdres_ChangeUICues(object sender, UICuesEventArgs e)

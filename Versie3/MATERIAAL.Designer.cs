@@ -47,9 +47,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(403, 64);
+            this.label3.Location = new System.Drawing.Point(302, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 17);
+            this.label3.Size = new System.Drawing.Size(89, 13);
             this.label3.TabIndex = 15;
             this.label3.Text = "Beschikbaarheid:";
             this.label3.Visible = false;
@@ -57,9 +58,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(403, 34);
+            this.label2.Location = new System.Drawing.Point(302, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Aantal:";
             this.label2.Visible = false;
@@ -67,9 +69,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(403, 7);
+            this.label1.Location = new System.Drawing.Point(302, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "Naam:";
             this.label1.Visible = false;
@@ -84,10 +87,10 @@
             this.txtNaam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNaam.isPassword = false;
-            this.txtNaam.Location = new System.Drawing.Point(524, -2);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNaam.Location = new System.Drawing.Point(393, -2);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNaam.Name = "txtNaam";
-            this.txtNaam.Size = new System.Drawing.Size(131, 30);
+            this.txtNaam.Size = new System.Drawing.Size(98, 24);
             this.txtNaam.TabIndex = 74;
             this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNaam.Visible = false;
@@ -102,10 +105,10 @@
             this.txtAantal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAantal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAantal.isPassword = false;
-            this.txtAantal.Location = new System.Drawing.Point(524, 30);
-            this.txtAantal.Margin = new System.Windows.Forms.Padding(5);
+            this.txtAantal.Location = new System.Drawing.Point(393, 24);
+            this.txtAantal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAantal.Name = "txtAantal";
-            this.txtAantal.Size = new System.Drawing.Size(131, 30);
+            this.txtAantal.Size = new System.Drawing.Size(98, 24);
             this.txtAantal.TabIndex = 75;
             this.txtAantal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtAantal.Visible = false;
@@ -120,10 +123,10 @@
             this.txtBeschikbaarheid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtBeschikbaarheid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBeschikbaarheid.isPassword = false;
-            this.txtBeschikbaarheid.Location = new System.Drawing.Point(524, 60);
-            this.txtBeschikbaarheid.Margin = new System.Windows.Forms.Padding(5);
+            this.txtBeschikbaarheid.Location = new System.Drawing.Point(393, 49);
+            this.txtBeschikbaarheid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBeschikbaarheid.Name = "txtBeschikbaarheid";
-            this.txtBeschikbaarheid.Size = new System.Drawing.Size(131, 31);
+            this.txtBeschikbaarheid.Size = new System.Drawing.Size(98, 25);
             this.txtBeschikbaarheid.TabIndex = 76;
             this.txtBeschikbaarheid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBeschikbaarheid.Visible = false;
@@ -146,12 +149,14 @@
             this.btnToev.IdleFillColor = System.Drawing.Color.White;
             this.btnToev.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnToev.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnToev.Location = new System.Drawing.Point(493, 102);
-            this.btnToev.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnToev.Location = new System.Drawing.Point(370, 83);
+            this.btnToev.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnToev.Name = "btnToev";
-            this.btnToev.Size = new System.Drawing.Size(161, 50);
+            this.btnToev.Size = new System.Drawing.Size(121, 41);
             this.btnToev.TabIndex = 77;
             this.btnToev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnToev.Visible = false;
+            this.btnToev.Click += new System.EventHandler(this.btnToev_Click_1);
             // 
             // btnReserveren
             // 
@@ -171,12 +176,13 @@
             this.btnReserveren.IdleFillColor = System.Drawing.Color.White;
             this.btnReserveren.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnReserveren.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnReserveren.Location = new System.Drawing.Point(203, 260);
-            this.btnReserveren.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnReserveren.Location = new System.Drawing.Point(152, 211);
+            this.btnReserveren.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnReserveren.Name = "btnReserveren";
-            this.btnReserveren.Size = new System.Drawing.Size(161, 50);
+            this.btnReserveren.Size = new System.Drawing.Size(121, 41);
             this.btnReserveren.TabIndex = 78;
             this.btnReserveren.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReserveren.Click += new System.EventHandler(this.btnReserveren_Click);
             // 
             // btnToevoegen
             // 
@@ -196,12 +202,13 @@
             this.btnToevoegen.IdleFillColor = System.Drawing.Color.White;
             this.btnToevoegen.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnToevoegen.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnToevoegen.Location = new System.Drawing.Point(19, 260);
-            this.btnToevoegen.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnToevoegen.Location = new System.Drawing.Point(14, 211);
+            this.btnToevoegen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnToevoegen.Name = "btnToevoegen";
-            this.btnToevoegen.Size = new System.Drawing.Size(161, 50);
+            this.btnToevoegen.Size = new System.Drawing.Size(121, 41);
             this.btnToevoegen.TabIndex = 79;
             this.btnToevoegen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnToevoegen.Click += new System.EventHandler(this.btnToevoegen_Click_1);
             // 
             // lvMateriaal
             // 
@@ -210,10 +217,11 @@
             this.chAantal,
             this.chBeschikbaarheid});
             this.lvMateriaal.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvMateriaal.Location = new System.Drawing.Point(12, 12);
+            this.lvMateriaal.Location = new System.Drawing.Point(9, 10);
+            this.lvMateriaal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvMateriaal.MultiSelect = false;
             this.lvMateriaal.Name = "lvMateriaal";
-            this.lvMateriaal.Size = new System.Drawing.Size(369, 239);
+            this.lvMateriaal.Size = new System.Drawing.Size(278, 195);
             this.lvMateriaal.TabIndex = 80;
             this.lvMateriaal.UseCompatibleStateImageBehavior = false;
             this.lvMateriaal.View = System.Windows.Forms.View.Details;
@@ -234,9 +242,9 @@
             // 
             // MATERIAAL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 325);
+            this.ClientSize = new System.Drawing.Size(494, 264);
             this.Controls.Add(this.lvMateriaal);
             this.Controls.Add(this.btnToevoegen);
             this.Controls.Add(this.btnReserveren);
@@ -247,7 +255,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MATERIAAL";
             this.Text = "MATERIAAL";
             this.Load += new System.EventHandler(this.MATERIAAL_Load);
