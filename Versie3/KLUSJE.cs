@@ -21,11 +21,14 @@ namespace Versie3
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             HOOFD_KLUSJE h = new HOOFD_KLUSJE();
-            h.Show();
+            h.ShowDialog();
+            vulForm();
         }
 
         private void KLUSJE_Load(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.showHoofdl)
+            { bunifuThinButton21.Visible = true; }
             vulForm();
         }
 

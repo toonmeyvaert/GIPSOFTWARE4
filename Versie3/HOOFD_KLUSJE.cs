@@ -55,29 +55,11 @@ namespace Versie3
             }
         }
 
-        private void txtVerantwoordelijke_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtKlusje_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPlanning_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPlanning_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-
+            KlusjeK k = (KlusjeK)lvK.SelectedItems[0].Tag;
+            bus.deleteKlusje(k.soort, k.verantwoordelijke, k.planning);
+            vulForm();
         }
 
         private void lvK_SelectedIndexChanged(object sender, EventArgs e)

@@ -118,6 +118,7 @@ namespace Versie3
             while (datareader.Read())
             {
                 KlusjeK k = new KlusjeK(datareader["SoortenKlusje"].ToString(),datareader["Verantwoordelijke"].ToString(), datareader["Planning"].ToString());
+                lijst.Add(k);
             }
             conn.Close();
             return lijst;
@@ -174,6 +175,16 @@ namespace Versie3
             }
             conn.Close();
             return acc;
+        }
+
+        public void deleteKlusje(string soort, string verantwoordelijke, string planning)
+        {
+            MySqlCommand cmd = new MySqlCommand("DELETE FROM `ID191774_6itngip17`.`klusje` WHERE (`SoortenKlusje` = '" + soort + "' AND `Verantwoordelijke` = '" + verantwoordelijke + "' AND `Planning` = '" + planning + "');", conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+
+
+            conn.Close();
         }
     }
 }

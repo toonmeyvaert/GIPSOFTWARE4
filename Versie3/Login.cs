@@ -22,7 +22,10 @@ namespace Versie3
         {
             if (b.tryLogIn(txtNaam.Text, txtWachtwoord.Text))
             {
+
                 accLeiding acc = b.logIn(txtNaam.Text);
+                Properties.Settings.Default.showHoofdl = acc.Hoofdleiding;
+                Properties.Settings.Default.Save();
                 MENU m = new MENU();
                 m.huidigaccount = acc;
                 m.Show();
