@@ -74,7 +74,7 @@ namespace Versie3
 
 
 
-            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtadres.Text, txtEmail.Text, cmbTak.Text, txtAchternaam.Text);
+            bus.voegToe(txtNaam.Text, txtGeboorte.Text, txtMed.Text, txtadres.Text, txtEmail.Text, cmbTak.selectedValue, txtAchternaam.Text);
             vulForm();
 
             txtNaam.Text = "";
