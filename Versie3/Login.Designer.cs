@@ -74,7 +74,7 @@
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
             this.btnLogin.Location = new System.Drawing.Point(24, 161);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogin.OnHovercolor = System.Drawing.Color.Red;
@@ -99,7 +99,7 @@
             this.txtWachtwoord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtWachtwoord.isPassword = true;
             this.txtWachtwoord.Location = new System.Drawing.Point(24, 113);
-            this.txtWachtwoord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWachtwoord.Margin = new System.Windows.Forms.Padding(4);
             this.txtWachtwoord.Name = "txtWachtwoord";
             this.txtWachtwoord.Size = new System.Drawing.Size(169, 41);
             this.txtWachtwoord.TabIndex = 6;
@@ -116,11 +116,12 @@
             this.txtNaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNaam.isPassword = false;
             this.txtNaam.Location = new System.Drawing.Point(24, 64);
-            this.txtNaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNaam.Margin = new System.Windows.Forms.Padding(4);
             this.txtNaam.Name = "txtNaam";
             this.txtNaam.Size = new System.Drawing.Size(169, 41);
             this.txtNaam.TabIndex = 7;
             this.txtNaam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNaam.OnValueChanged += new System.EventHandler(this.txtNaam_OnValueChanged);
             // 
             // Login
             // 
